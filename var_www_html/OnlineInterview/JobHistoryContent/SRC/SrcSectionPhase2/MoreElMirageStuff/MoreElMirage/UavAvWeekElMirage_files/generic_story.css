@@ -1,0 +1,113 @@
+/*
+Styles for the Business Channel
+*/
+#content td div#spotlight {
+	width: 300px;
+	height: 220px;
+	
+}
+html.ie6 #content td div#spotlight {
+	margin-left:  0px;
+}
+
+#content td div#spotlight {
+	margin-right: 0px;
+	margin-top: 2px;
+
+}
+
+html.ie6 #adBlock {
+	margin-left: 0;
+}
+
+
+#content .tools h4 {
+	text-align:  center;
+	color: black;
+	border-bottom: 1px solid #bfbfbf;
+	background: #efefef;
+	margin-top:  0;
+	line-height: 20px;
+	font-size:  10px;
+}
+#content td div img {
+	padding-left:0px;
+	padding-bottom:2px;
+}
+
+#story {
+	width:  635px;
+	margin-top: 2px;
+}
+#teaser {
+	width:  635px;	
+	background: #efefef;
+	font-size:  12px;
+}
+
+#rss_story {
+	width:  750px;
+}
+
+html.ie6 #rss_story {
+width:  635px;
+}
+
+#story h3 {
+	font-size:  18px;
+	line-height: 40pt;
+	color: black;
+}
+html.ie.6# story h3 {
+	font-size:  18px;
+	line-height: 0pt;
+	color: black;
+}
+html.ie.7# story h3 {
+	font-size:  18px;
+	line-height: 0pt;
+	color: black;
+}
+
+#content #story .tools {
+	float: right;
+	clear:  none;
+	width:  150px;
+	border: 1px solid #bfbfbf;
+	margin-top: 3px;
+}
+#content #story .tools a {
+	font-size:11px;
+	text-decoration: none;
+}
+html.ie6 #ad {
+	padding-left:  6px;
+}
+div.storyContent td {
+	font-size: 10pt;
+padding-left:  16px;
+
+}
+html.ie6 div.storyContent {
+	width:  95%;
+}
+ content#storycontent td div {
+	margin-right: 3px;
+	margin-bottom: 3px;
+	margin-left: 3px;
+}
+#tools {
+	float: right;
+	clear:  none;
+	width:  150px;
+	border: 1px solid #bfbfbf;
+	font-size: 10pt;
+}
+
+#tools a {
+	text-decoration: none;
+}
+
+#storyContent {
+font-size: 10px;
+}

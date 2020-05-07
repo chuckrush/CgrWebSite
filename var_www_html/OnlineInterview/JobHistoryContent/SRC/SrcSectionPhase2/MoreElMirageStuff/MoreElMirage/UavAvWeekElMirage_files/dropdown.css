@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+
+ul.classic {
+ list-style: disc;
+ margin-bottom: 1em;
+ padding-left: 2em;
+}
+
+
+.dropdown-upward {
+ margin-top: 400px !important;
+}
+
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+ul.dropdown {
+ position: relative;
+ z-index: 597;
+ float: left;
+}
+
+ul.dropdown li {
+ float: left;
+ line-height: 1.3em;
+ vertical-align: middle;
+ zoom: 1;
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+ position: relative;
+ z-index: 599;
+ cursor: default;
+}
+
+ul.dropdown ul {
+ visibility: hidden;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ z-index: 598;
+ width: 100%;
+}
+
+ul.dropdown ul li {
+ float: none;
+}
+
+ul.dropdown ul ul {
+ top: 1px;
+ left: 99%;
+}
+
+ul.dropdown li:hover > ul {
+ visibility: visible;
+ margin: -1px;
+}
+
+ul.dropdown li.rtl ul {
+ top: 100%;
+ right: 0;
+ left: auto;
+}
+
+ul.dropdown li.rtl ul ul {
+ top: 1px;
+ right: 99%;
+ left: auto;
+}
+
+@charset "UTF-8";
+@import "helper.css";
+
+
+
+#nav {
+	width: 981px;
+	height: 30px;
+	background-color: #f6f6f6;
+	border-bottom: solid 1px #d9d9d9;
+}
+
+ul.dropdown {
+ font-weight: bold;
+}
+
+ul.dropdown li {
+ padding: 7px 10px;
+ font-size: 10px;
+ border-style: solid;
+ border-width: 1px 0 0 1px;
+ border-color: #fff #d9d9d9 #d9d9d9;
+ background-color: #f6f6f6;
+ color: #000;
+}
+
+ul.dropdown a:link,
+ul.dropdown a:visited	{ color: #000; text-decoration: none;font-size:10px; }
+ul.dropdown a:hover		{ color: #000; text-decoration: underline;font-size:10px;  }
+ul.dropdown a:active	{ color: #ffa500; font-size:10px;}
+
+
+ul.dropdown ul {
+ width: 150px;
+ margin-top: 1px;
+}
+
+ul.dropdown ul li {
+ font-weight: normal;
+}
+
+#last {
+ padding-left: 16px;
+}
+
+ul.dropdown li a {
+ display: block;
+ padding: 7px 10px 7px 11px;
+}
+
+ul.dropdown li {
+ padding: 0 3px;
+}
+
+ul.dropdown li.dir {
+ padding: 7px 20px 7px 10px;
+}
+
+ul.dropdown ul li.dir {
+ padding-right: 15px;
+}
+
+ul.dropdown ul a {
+ width: 129px;
+}
+
+ul.dropdown ul a:hover {}
+
+ul.dropdown ul a.dir {
+ width: 124px;
+}
+
+ul.dropdown *.dir {
+ padding-right: 20px;
+ background-image: url(images/nav-arrow-down.png);
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+
+ul.dropdown-horizontal ul *.dir {
+ padding-right: 15px;
+ background-image: url(images/nav-arrow-right.png);
+ background-position: 100% 50%;
+ background-repeat: no-repeat;
+}
+
+ul.dropdown-upward *.dir {
+ background-image: url(images/nav-arrow-top.png);
+}
+
+ul.dropdown-vertical *.dir,
+ul.dropdown-upward ul *.dir {
+ background-image: url(images/nav-arrow-right.png);
+}
+
+ul.dropdown-vertical-rtl *.dir {
+ padding-right: 10px;
+ padding-left: 15px;
+ background-image: url(images/nav-arrow-left.png);
+ background-position: 0 50%;
+}

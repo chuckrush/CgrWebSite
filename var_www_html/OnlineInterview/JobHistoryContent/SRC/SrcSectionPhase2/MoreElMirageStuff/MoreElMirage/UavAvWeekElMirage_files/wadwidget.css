@@ -1,0 +1,123 @@
+/* start tabs400 */
+
+.wadTabs {
+	width: 300px;
+	overflow: hidden;	
+	margin-left:10px;
+}
+
+html.ie6 .wadTabs {
+	width: 300px;	
+}
+
+.wadTabs ul {
+	margin: 0;
+	list-style: none;
+	padding: 10px 6px 0 0;
+}
+
+html.ie6 .wadTabs ul {
+	margin: 0;
+	list-style: none;
+	padding: 15px 0 0 0;
+}
+
+.wadTabs li.current  {
+	display: block;
+	float: left;
+	color: #e25c36;
+	font-size: 9px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	background: url(/media/images/aw_images/tab_active_137.gif) top left no-repeat;
+	width: 140px;
+	height: 22px;
+	line-height: 22px;
+	margin-right: 6px;
+}
+
+.wadTabs li.inactive  {
+	display: block;
+	float: left;
+	color: #224e9c;
+	font-size: 9px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	background: url(/media/images/aw_images/tab_inactive_137.gif) top left no-repeat;
+	width: 140px;
+	line-height: 22px;
+	margin-right: 6px;
+}
+
+.wadTabs li.current a {
+	color: #e25c36;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.wadTabs li.current a:hover {
+	color: #e25c36;
+	font-size: 9px;
+	font-weight: bold;
+	text-decoration: none
+}
+
+.wadTabs li.inactive a {
+	color: #224e9c;
+	font-size: 9px;
+	letter-spacing: -.04em;
+}
+
+#tabBkgrd40001 {
+	width: 300px;
+	background: url(/media/images/aw_images/tab_bkgrd_280_01.gif) top left no-repeat;
+	margin-bottom: 5px;
+	margin-left:10px;
+}
+
+#tabBkgrd40002 {
+	width: 300px;
+	background: url(/media/images/aw_images/tab_bkgrd_280_02.gif) top left no-repeat;
+	margin-bottom: 5px;
+	margin-left:10px;
+	
+}
+html.ie6 .tabBkgrd40001{
+	margin-left:10px;
+}
+html.ie6 .tabBkgrd40002{
+	margin-left:10px;
+}
+
+
+#tabBkgrd40003 {
+	width: 300px;
+	background: url(/media/images/aw_images/tab_bkgrd_300_02.gif) top left no-repeat;
+	margin-bottom: 5px;
+	
+}
+
+/* ends tabs 400 */
+
+.wadSectionHdr {
+	overflow: visible;
+	z-index: 200;
+	width: 300px;
+	background: url(/media/images/aw_images/wadwidget_header.JPG) top left;
+	position: relative;
+}
+
+.wad  {
+	display: block;	
+	color: #e25c36;
+	font-size: 9px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	
+	height: 22px;
+	line-height: 22px;
+	
+}

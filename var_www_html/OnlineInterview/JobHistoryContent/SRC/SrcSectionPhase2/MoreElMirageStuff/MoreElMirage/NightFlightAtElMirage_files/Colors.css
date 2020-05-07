@@ -1,0 +1,741 @@
+body *
+ {
+/* color:#3F3F3F; */
+}
+/**Level3 display(level1-hover) issue in ie7**/
+/*.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren:hover ul li ul li a, .MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren:hover ul li ul li.AspNet-Menu-Sep, .MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren:hover ul li ul, .MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren:hover ul li ul li.AspNet-Menu-WithChildren a
+{ 
+    #background-color: #C2C2C2;
+}
+ @import url('../AIA/Custom.css'); */
+#MPOuter
+{
+/*background-image:url('images/shades.jpg');
+background-repeat:repeat-y;*/
+
+
+}
+#MPOuter
+{
+    border:none
+}
+
+#MPheader 
+{
+    
+}
+.HLWelcomeHeader .Content {
+border-color:#C2C2C2 #ccc #ccc;
+}
+/***Dark color : hover color - Start***/
+.MenuBarUnderline
+{
+    background-color: transparent;
+}
+#MPSlogan
+{
+    color:#AFB1B3;
+}
+#MPButtonBar 
+{
+    /*background-color:#ccc;*/
+}
+.MPButtonNav ul.AspNet-Menu li a
+{
+    color:#1C123C;
+}
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a, 
+.MPButtonNav ul.AspNet-Menu li:hover a, 
+.MPButtonNav ul.AspNet-Menu li a:hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-Hover a, 
+.MPButtonNav ul.AspNet-Menu li a.AspNet-Menu-Hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-Selected a.AspNet-Menu-Selected, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected a.AspNet-Menu-Link.AspNet-Menu-ChildSelected
+{
+    /*background-color: #C2C2C2;*/
+    background-color:#BCBCBC;
+    color: #666666;
+}
+
+.MPButtonNav ul.AspNet-Menu li ul li
+{
+    background-color: #C2C2C2;
+    color: #fff;
+}
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren:Hover li.AspNet-Menu-WithChildren a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren:Hover li.AspNet-Menu-WithChildren a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren.AspNet-Menu-Hover li.AspNet-Menu-WithChildren a, 
+.MPButtonNav ul.AspNet-Menu li:Hover li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-WithChildren li.AspNet-Menu-WithChildren a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren.AspNet-Menu-Hover ul li.AspNet-Menu-WithChildren a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren:Hover ul li.AspNet-Menu-WithChildren a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren.AspNet-Menu-Hover ul li.AspNet-Menu-WithChildren a,
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren a.AspNet-Menu-Link, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a
+
+{
+    color: #1C123C;
+    /*background-color:#C2C2C2;*/
+    background-color:#C2C2C2;
+}
+
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren a:hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected ul li.AspNet-Menu-WithChildren.AspNet-Menu-ChildSelected a:hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren.AspNet-Menu-Hover ul li.AspNet-Menu-WithChildren a:hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren:hover a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren.AspNet-Menu-Hover a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren:hover a, 
+#MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren:hover a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren.AspNet-Menu-Hover a, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren.AspNet-Menu-Hover a
+{
+    color: #666666;
+    background-color: #C2C2C2;
+}
+.HLWelcomeHeader .Content,.HLWelcome .Content 
+{
+    border-color: #525D79;
+}
+/***Directory - selected tab**/
+.TabButtonBottom
+{
+    background-color: #C2C2C2;
+}
+.MPContentSection a.TabSelectedDir
+ 
+{
+    background-color: #C2C2C2;
+     color:#fff;
+}
+.MPContentSection a.TabSelectedDir, .MPContentSection a.TabSelectedDir:hover
+{
+    color:#fff;
+}
+th
+{
+    background-color:#525D79;
+}
+.ListContainer .ListHeader td,.ListContainer .ListHeader th,.DGHBottom 
+{
+    color:#fff;
+}
+.ListContainer .ListHeader a:hover, .ListContainer .ListHeader a:link, 
+.ListContainer .ListHeader a:visited 
+{
+    color:#fff;
+}
+.TabBlock
+{
+    border-bottom: 4px solid #C2C2C2;
+}
+a:visited, a:active, a:link, a:focus
+{
+    color:#1f497d;
+    font-size:13px;
+}
+a:hover 
+{
+    color:#1f497d;
+}
+.HLWelcome .UnreadMessages a
+{
+    color:#555;
+}
+    
+/***Page title**/
+h1, .Heading1
+{
+    border-bottom: 1px solid #C2C2C2;
+    border-top: 6px solid #C2C2C2;
+    color:#555;
+    font-weight:normal;
+    font-family: Verdana;
+}
+/***Documet Page***/
+.TabSelected 
+{
+    background-color:#C2C2C2;
+}
+/*.rlItemHeader, .rlSectionHeader, .rlCollapseHeader
+{
+    background-color: #C2C2C2;
+}*/
+
+
+
+.BreadCrumb, .BreadCrumb a,h2 a:link, h2 a:visited, 
+h2 a:focus, h3 a:link, h3 a:visited, h3 a:focus,.rlScore, .rlScore:hover 
+{
+    color: #555;
+    font-size:11px;
+}
+
+.DGHBottom
+{
+    background-color: #C2C2C2;
+}
+/*div.rlItemHeader, .rlSectionHeader
+{
+    background-color: #525D79;
+	color:#fff;
+}*/
+
+/*th, .rlCollapseHeader 
+{
+	background-color:#C2C2C2;
+	color:#fff;
+}*/
+.TableHeader 
+{
+	background-color:#C2C2C2;
+	color:#fff;
+}
+th
+{
+    background-color:#C2C2C2;
+color:#FFFFFF;
+}
+/***Search headerbg**/
+.HLSearch .Content .HeaderStatusBar 
+{
+	background-color:#C2C2C2;
+}
+.HLSearch .Content .ResultStatus,.HLSearch .Content .SortBy,
+.HLSearch .Content .HeaderStatusBar a 
+{
+    color:#fff;
+}
+/***Send message - BG***/
+.ModalPopupHeading 
+{
+    background-color:#C2C2C2;
+}
+/***Orange color : hover color - End***/
+
+
+/***Green color : Button bar color - Start***/
+#MPButtonBar
+{
+    background-color:#525D79; /*#525D79*/
+}
+/*.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a.AspNet-Menu-Link
+{
+	color:#000;
+}*/
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a.AspNet-Menu-Hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren a.AspNet-Menu-Link:hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a.AspNet-Menu-Hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a.AspNet-Menu-Hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a:hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a:hover, 
+.MPButtonNav ul.AspNet-Menu li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-WithChildren ul li.AspNet-Menu-Leaf a:hover
+{
+     /*background-color:#C2C2C2;*/
+     background-color:#C2C2C2;
+    color: #666666;
+}
+
+.MPSideNavBottom
+{
+    color: #000066;
+    font-family:Tahoma;
+    font-size:13px;
+    padding:8px 3px 0 10px;
+    
+}
+.HLWelcomeHeader .Login a 
+{
+	color:#fff;
+}
+.HLWelcomeHeader .Login a:hover
+{
+
+	color:#fff;
+}
+hr.delimiter 
+{
+    border-top-color:#C4352D;
+    background-color:transparent;
+}
+.HLWelcome .Welcome 
+{
+    /*background-color:#C2C2C2;*/
+}
+/***Profile bio, interest,etc heading***/
+ .Heading2, h2 a,h3, .Heading3, h3 a   /*Newly Added as per style sheet*/
+{
+    color:#C2C2C2;
+font-family:tahoma;
+font-size:13px;
+font-weight:bold;
+}
+h2,h2 a
+{
+   color:#C2C2C2;
+font-family:tahoma;
+}
+.Emphasized, .NoData  /*Newly Added as per style sheet*/
+{
+font-family:tahoma;
+font-size:13px;
+
+}
+
+
+/***Blue color : Button bar - End**/
+
+/*.MPContentAreaHome .HLLandingControl h2, .MPContentAreaHome .DubConnectPopUp h2
+{
+    
+    color:#555;
+    background-image:url('images/bar-grad.jpg');
+    background-repeat:repeat-x;
+    border:1px solid;
+    
+    border-color:#BBBBBB #BBBBBB #BBBBBB;
+    border-bottom:none;
+    background-color:transparent;
+    border-top:1px solid #BBBBBB;
+    #height:19px;
+}*/
+.HLLandingControl .Content 
+{
+
+	border-color:#BBBBBB #BBBBBB #BBBBBB;
+}
+.HLAnnouncements .Content h2, .HLRSSReader .Content h2
+{
+    color: #3f3f3f;
+}
+
+.MPAuxNav ul.AspNet-Menu li a 
+{
+color:#fff;
+font-size:11px;
+}
+.HLWelcome .MenuLinks a
+{
+    	color:#000066;
+	border-left-color:#000066 ;
+}
+.HLWelcomeHeader h1 
+{
+    color:#000066;
+}
+.HLWelcome .MenuLinks a:hover
+{
+	color:#000066 ;
+}
+
+/***Sort By link color***/
+.SortBy a:link,.SortBy a:hover, .SortBy a:active
+{
+	color:white;
+}
+/***Progressbar color***/
+.ProgressBarProgress
+{
+	background-color:#C2C2C2;
+}
+
+.MPFooter 
+{
+	border-right-color:transparent;
+}
+.MPAuxNav ul.AspNet-Menu li.AspNet-Menu-Sep 
+{
+	border-right-color:transparent;
+}
+
+a.TabDeselectedDir 
+{
+	background-color:#525D79;
+}
+
+.MPContentSection a.TabDeselectedDir, .MPContentSection a.TabDeselectedDir:hover,
+.MPContentSection .Tab a 
+{
+	color:#fff;
+}
+.MPBottomNav ul.AspNet-Menu li a 
+{
+	color:#555;
+}
+.MPBottomNav ul.AspNet-Menu li a:hover
+{
+	color:#555;
+}
+.MPBottomNav ul.AspNet-Menu li.AspNet-Menu-Sep 
+{
+    border-right:1px solid #000;
+}
+#MPCopyright 
+{
+    color:#555;
+}
+.head a 
+{
+	color:#fff;
+}
+.GridHeader a
+{
+    color:#fff;
+}
+.Tab 
+{
+	background-color:#525D79;
+
+}
+/*** for blog viewer styles ***/
+.drItemSubHeader,.headerItem 
+{
+    background-color:#525D79;
+    border-color:#525D79;
+     color:#555;
+}
+.dsItemBackground 
+{
+    background-color:#C2C2C2;
+    border-color:#C2C2C2;
+    color:#fff;
+}
+.drItemSubHeader  
+{
+    background-color:#ccc;
+    border:1px solid #ccc;
+}
+.Tab
+{
+    background-color:#ccc;
+}
+.TabSelected 
+{
+    background-color:#C2C2C2;
+}
+
+    
+.drItemSubHeader a,.ListGroupRow span,.ListContainer .ListGroupRow
+
+{
+    /*color:#ebe7dc;*/
+    color:#fff;
+}
+.HeaderForeColor  {
+color:#FFFFFF;
+}
+.DigestVCrumbBar td span.contentBoldNew
+{
+    color:#555;
+}
+.ListContainer .ListHeader 
+{
+    background-color:#C2C2C2;
+}
+/***************** Digest viewer classes start*************/
+ .ListContainer .ListGroupRow 
+ {
+      background-color:#525D79;
+ }
+ .ListContainer .ListHeader th
+{
+    background-color: #C2C2C2;
+}
+ .DigestVCrumbBar td span a.contentBoldNew, 
+ .DigestVCrumbBar td a.Heading1New, .DigestVCrumbBar td span span a, 
+ .DigestVCrumbBar td span.contentBoldNew span a, 
+ .DigestVCrumbBar td span 
+ {
+    color:#555;
+}
+.ListContainer .ListGroupRow td {
+color:#FFF;
+}
+.DigestVCrumbBar 
+{
+    background-color:#525D79;
+    border:1px solid #BEBEBE;
+}
+/***************** Digest viewer classes end*************/
+.tabStyle .ajax__tab_active .ajax__tab_outer
+ {
+	background:#C2C2C2 ;
+	border-color:#C2C2C2;
+}
+.tabStyle .ajax__tab_active .ajax__tab_inner 
+{
+	background:#C2C2C2 none repeat scroll 0 0;
+
+}
+.tabStyle .ajax__tab_active .ajax__tab_tab
+ {
+	background:#C2C2C2  none repeat scroll 0 0;
+	border-color:#C2C2C2 ;
+	color:#fff;
+}
+.tabStyle .ajax__tab_tab 
+{
+	background-color:#525D79;
+	color:#555;
+	background-image:none;
+}
+
+.tabStyle .ajax__tab_header
+{
+	border-bottom-color:#C2C2C2;
+}
+.tabStyle .ajax__tab_tab,.tabStyle .ajax__tab_inner,.tabStyle .ajax__tab_outer
+{
+    background-image:none;
+}
+/**** egroups ******/
+.Container thead .Header td
+ {
+	background-color:#C2C2C2;/*#525D79;*/
+color:#fff;
+}
+.Container .SubHead td 
+{
+	background-color:#525D79;
+color:#555;
+}
+.HLEngagement h3,.HLLandingControl h5  
+{
+	color:#555;
+	font-family:tahoma;
+	font-size:11px;
+}
+.HLLandingControl h5 a
+{
+    font-size:11px;
+}
+.HLLandingControl .Content 
+{
+    font-family:tahoma;
+}
+.HLLandingControl h4 {
+color:#595959;
+}
+td.TabSelected a, td.TabSelected a:hover, td.TabSelected a:visited,
+.MPContentSection .TabSelected a 
+{
+    color:#fff;
+}
+.ModalPopupHeading 
+{
+	background-color:#C2C2C2 ;
+}
+.repeatImageSelected,.homeRepeatImageSelected,.groupsRepeatImageSelected 
+{
+	background-color: #C2C2C2;
+	background-image:none;
+
+}
+.homeRepeatImage,.repeatImage,.groupsRepeatImage 
+{
+	background-color:#525D79;
+	color:#fff;
+	background-image:none;
+}
+
+/***Egroups home - border -search**/
+.NewBorder1 
+{
+    border:1px solid #848484;
+}
+.Tab ,.TabSelected 
+{
+    border-right-color:#fff;
+}
+.ViewDetails 
+{
+    background-color:#C2C2C2;/*#525D79;*/
+    color:#fff;
+}
+.trbgcolor 
+{
+    background-color:#ddd;
+}
+.head 
+{
+    background-color:#525D79;
+}
+.head td span {
+color:#fff;
+}
+/***************** colors for library admin ********/
+.rlItemHeader, .rlSectionHeader, .rlCollapseHeader 
+{
+background-color:#C2C2C2;
+color:#fff;
+}
+ .rlCollapseHeader,.rlColumns th
+{
+background-color:#525D79;
+color:#fff;
+
+}
+/***Search Library - spacing issue**/
+.rlCollapseHeader
+{
+    border-bottom:2px solid #525D79;
+}
+/**************** Contibutors search result heading ****************/
+.GridBorder .rlColumns a:link {
+color:#555;
+}
+.GridBorder .rlColumns td a:link {
+color:#555;
+}
+.ViewDetails a 
+{
+color:White;
+}
+.glHome table
+{
+    width:100%;
+}
+.dsItemBackground a
+ {
+        color:#fff;
+}
+td.Tab a, td.Tab a:hover, td.Tab a:visited 
+{
+    color:#555;
+}
+.CommentModalPopupHeader 
+{
+    background-color:#C2C2C2;
+    color:#fff;
+}
+.bodyBackground
+{       background-image:url("images/auvsibackgroundhome.jpg");
+  
+ 
+background-repeat:repeat-x;
+background-color:#00123A;
+
+}
+.MPimage
+{
+    background-color:transparent;
+}
+.MPContentSection 
+{
+    background-color:#fff;
+}
+.ItemContainer .ItemHeader {
+
+background-color:#525D79;
+}
+.ItemContainer .ItemHeader a {
+color:#555;
+}
+.Help {
+background-color:#FFFACD;
+border:1px solid #4B253E;
+}
+.headerItem  
+{
+background-color:#ccc;
+border:1px solid #ccc;
+}
+/***Sidemenu icon***/
+.MPSideNav ul.AspNet-Menu li a, 
+.MPSideNav ul.AspNet-Menu li.AspNet-Menu-Leaf a, 
+.MPSideNav ul.AspNet-Menu li.AspNet-Menu-WithChildren a 
+{
+    background-color:transparent;
+    background-image:url(images/SideMenuIconaia.jpg );
+}
+.MPFooter  
+{
+    background-color:#ddd;
+}
+a.TabDeselectedDir, .TabDeselectedDir a,
+.Container .SubHead td,
+.ItemContainer .ItemHeader,
+.tabStyle .ajax__tab_tab,
+.DigestVCrumbBar,
+.ListContainer .ListGroupRow
+
+{
+background-color:#ccc;
+}
+.egItemHeaderForEgroupDelete
+{
+background-color:#C2C2C2;
+border:1px solid #C2C2C2;
+color:#fff;
+}
+.MPContentAreaHome .HLLandingControl h2, .MPContentAreaHome .DubConnectPopUp h2
+{
+    border-top:1px solid #bbbbbb;
+}
+.TableHeader th a:link
+{
+    color:#fff;
+}
+.ItemContainer .ItemHeader td 
+{
+color:#555;
+}
+.MPContentArea, .MPContentAreaWide,#MPFooterLink a 
+ {
+    color:#555;
+}
+.HLLandingControl .Details p,.HLLandingControl p  
+{
+    color:#3F3F3F;
+font-family:tahoma;
+font-size:13px;
+word-wrap:break-word;
+
+}
+.HLLandingControl a
+{
+    color:#1f497d;
+}
+.ByLine  
+{
+color:#595959;
+}
+.RowStyle
+{
+    font-size:11px;
+    font-family:Tahoma;
+    color:#3F3F3F;
+}
+h3 span
+{
+color:#3F3F3F;
+font-family:tahoma;
+font-size:13px;
+font-weight:bold;
+}
+HtmlContent p
+{
+    color:#3f3f3f;
+}
+
+p
+ {
+color:#3F3F3F;
+}
+
+.Skin .QuestionText {
+color:#3F3F3F;
+font-family:tahoma;
+font-size:110%;
+}
+.Form .Required, span.Prompt {
+color:#3F3F3F;
+font-family:tahoma;
+}
+.MPBottomAds {
+background-color:#FFFFFF;
+}

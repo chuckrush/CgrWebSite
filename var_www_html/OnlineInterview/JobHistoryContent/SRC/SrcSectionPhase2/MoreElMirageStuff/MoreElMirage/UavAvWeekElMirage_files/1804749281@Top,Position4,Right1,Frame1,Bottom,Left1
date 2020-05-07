@@ -1,0 +1,20 @@
+function OAS_RICH(position) {
+if (position == 'Bottom') {
+document.write ('<A HREF="http://oascentral.aviationnow.com/RealMedia/ads/click_lx.ads/www.aviationnow.com/homepage/1385259795/Bottom/default/empty.gif/536b374b7055383237744d41425a784e;zip=US:13202?x" target="_top"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Frame1') {
+document.write ('<A HREF="http://oascentral.aviationnow.com/RealMedia/ads/click_lx.ads/www.aviationnow.com/homepage/1837519982/Frame1/default/empty.gif/536b374b7055383237744d41425a784e;zip=US:13202?x" target="_top"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Left1') {
+document.write ('<A HREF="http://oascentral.aviationnow.com/RealMedia/ads/click_lx.ads/www.aviationnow.com/homepage/1455550854/Left1/default/empty.gif/536b374b7055383237744d41425a784e;zip=US:13202?x" target="_top"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Position4') {
+document.write ('<A HREF="http://oascentral.aviationnow.com/RealMedia/ads/click_lx.ads/www.aviationnow.com/homepage/865571950/Position4/default/empty.gif/536b374b7055383237744d41425a784e;zip=US:13202?x" target="_top"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Right1') {
+document.write ('<A HREF="http://oascentral.aviationnow.com/RealMedia/ads/click_lx.ads/www.aviationnow.com/homepage/1169987891/Right1/default/empty.gif/536b374b7055383237744d41425a784e;zip=US:13202?x" target="_top"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Top') {
+document.write ('<A HREF="http://oascentral.aviationnow.com/RealMedia/ads/click_lx.ads/www.aviationnow.com/homepage/750583011/Top/default/empty.gif/536b374b7055383237744d41425a784e;zip=US:13202?x" target="_top"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+}

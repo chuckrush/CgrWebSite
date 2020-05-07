@@ -1,0 +1,173 @@
+
+.MailBreadCrumb
+{
+	color: #c40f2f;
+	font-family: Verdana, sans-serif , Helvetica,Arial,Times New Roman;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+.MailGrayBGNew
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	background-color: #efefef;
+}
+
+.MailEmailLink
+{
+	padding-right: 5px;
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 9pt;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-family: Frutiger, Arial, Helvetica, sans-serif;
+}
+
+.MailListHeader
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	color: #000;
+	padding-top: 5px;
+	background-color: #BCBCBC;
+	font-weight: bold;
+}
+
+.MailListHeaderData
+{
+	color: #000;
+}
+
+.MailPrompt
+{
+	margin-top: 10px;
+	font-weight: bold;
+	padding-right: 1em;
+}
+
+.MailListAlternativeRow
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-color: #f4f4f4;
+}
+
+.MailListRow
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.MailMessageMenuList
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	margin: 0px;
+	width: 180px;
+	padding-top: 5px;
+}
+
+.MailMessageMenuListItem
+{
+	padding-bottom: 3px;
+	padding-top: 3px;
+	list-style-type: none;
+}
+
+.MailListGroupRow
+{
+	font-weight: bold;
+	background-color: #c6c7c6;
+}
+
+.MailListGroupRowData
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.MailLeftPaneAnchor
+{
+	color: #f7c75a;
+	text-align: center;
+}
+
+.MailRightPane
+{
+	width: 100%;
+	color: #000;
+}
+
+.MailListBodyLeftPane
+{
+	width: 200px;
+	background-color: #efefef;
+	text-align: left;
+}
+
+.MailListBodyRightPane
+{
+	background-color: white;
+	width: 100%;
+}
+
+.MailDigestVCrumbBar
+{
+	background-color: #ccc;
+	padding: 5px;
+	border: 1px solid #193b7b;
+}
+.MailFooter
+{
+	font-family: Arial;	
+	font-size: x-small;
+	background-color: #BCBCBC;
+	color:#000;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+	border-left: 1px solid #c0afb7;
+	border-right: 1px solid #c0afb7;
+	border-bottom: 1px solid #c0afb7;
+	height:52px;
+}
+.LinkStyle
+{	
+	color: #fff;
+}
+/*Added on 27.03.09 for font sizes of mail contents*/
+.MailMessageDetails
+{
+    font-size: 9pt;
+    font-family: Frutiger, Arial, Helvetica, sans-serif;
+}
+.MailProfileImageContainer
+{
+    font-size: 9pt;
+    font-family: Frutiger, Arial, Helvetica, sans-serif;
+}
+
+.MailMessageContent
+{
+    font-size: 9pt;
+    font-family: Frutiger, Arial, Helvetica, sans-serif;
+}
+
+
+
+.MsoNormal
+{
+    color:#fff;
+}

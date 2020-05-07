@@ -1,0 +1,44 @@
+	<script src=../../javascript//validateForm.js>
+	</script>
+
+    <div class="row">
+
+        <!-- 1st column - Data entry fields for station name and location -->
+        <div class="col-sm-8 span12">
+            <h1> Enter informaton about your listening station</h1>
+
+            <div class="form-group">
+                <label for="ListeningLocation">Station Name([A-Z],[a-z],[0-9],["_- "], Max length: 32)</label>
+                <input type="text" value="My Shack" class="form-control" id="ListeningLocation" name="ListeningLocationLabel" data-toggle="tooltip" data-placement="top" title="Name of your listening station. The range/bearing fields to the AM BCB stations will be relative to this location. Legal characters are letters, numbers, dash, underscore, and spaces.">
+            </div>
+
+            <div class="form-group">
+                <label for="ListeningLatitude">Station Latitude (Degrees, dd.dddddd, [-90.0,90.0])</label>
+                <input type="text" class="form-control" id="ListeningLatitude" name="LatitudeDegrees" data-toggle="tooltip" data-placement="top" title="Latitude of your listening station.">
+            </div>
+
+            <div class="form-group">
+                <label for="ListeningLongitude">Station Longitude (Degrees, ddd.dddddd, [-180.0,180.0])</label>
+                <input type="text" class="form-control" id="ListeningLongitude" name="LongitudeDegrees" data-toggle="tooltip" data-placement="top" title="Longitude of your listening station.">
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="testcgic">Press here to get customized map</button>
+
+            </form>
+            <!-- End of 1st column html code -->
+        </div>
+
+        <!-- 2nd column - Help users who may be unsure about lat/lon details. -->
+        <div class="col-sm-4 span12">
+            <h1>Need some help?</h1>
+            <h2>How to find latitude and longitude of your station.</h2>
+	        <ol>
+	        <li>Use Google Earth. Find your station location and read latitude and longitude from GUI.</li>
+	        <li>Go to this site, <a href="https://www.latlong.net/" target="_blank">https://www.latlong.net</a>. You can 
+                enter your address and get your latitude and longitude.</li>
+	        </ol>
+	    <!-- End of 2nd column html code -->
+        </div>
+
+    <!-- End of <div class="row"> -->
+    </div>

@@ -1,0 +1,90 @@
+function OAS_RICH(position) {
+if (position == 'Bottom') {
+document.write ('\n');
+document.write ('\n');
+document.write ('		\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('//<![CDATA[\n');
+document.write ('var filePath                     = "http://imagec10.247realmedia.com/RealMedia/ads/Creatives/McGrawHill/airbusmilitary_728_singapore_ROS_021312/airbusmilitary_728_singapore_021312.swf/1328799355";\n');
+document.write ('var TFSMFlash_PRETAG             = "";\n');
+document.write ('var TFSMFlash_POSTTAG            = "";\n');
+document.write ('var TFSMFlash_VERSION            = "9";\n');
+document.write ('var TFSMFlash_WMODE              = "opaque";\n');
+document.write ('\n');
+document.write ('			var TFSMFlash_OASCLICK           = "http://oascentral.aviationweek.com/RealMedia/ads/click_lx.ads/www.aviationweek.com/channel/story/defense/L42/1207988190/Bottom/McGrawHill/airbusmilitary_728_singapore_ROS_021312/airbusmilitary_728_singapore_021312.html/536b374b7055383237744541444c5662";\n');
+document.write ('	\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_SWFCLICKVARIABLE   = "?clickTag="+TFSMFlash_OASCLICK + "";\n');
+document.write ('var TFSMFlash_SWFFILE            = filePath + TFSMFlash_SWFCLICKVARIABLE;\n');
+document.write ('var TFSMFlash_FSCOMMAND          = "";\n');
+document.write ('var TFSMFlash_IMAGEALTERNATE     = "http://imagec10.247realmedia.com/RealMedia/ads/Creatives/McGrawHill/airbusmilitary_728_singapore_ROS_021312/airbusmilitary_728_singapore_021312.gif/1328799355";\n');
+document.write ('\n');
+document.write ('\n');
+document.write ('var TFSMFlash_OASALTTEXT         = "";\n');
+document.write ('var TFSMFlash_OASTARGET          = "_blank";\n');
+document.write ('var TFSMFlash_OASPROTOCOL        = "http://";\n');
+document.write ('var TFSMFlash_OASDIM             = "width=');
+document.write ("'");
+document.write ('728px');
+document.write ("'");
+document.write (' height=');
+document.write ("'");
+document.write ('90px');
+document.write ("'");
+document.write ('";\n');
+document.write ('var TFSMFlash_OASADID            = "OAS_RMF_Bottom_FLASH";\n');
+document.write ('document.write("<"+"scr"+"ipt type=\\');
+document.write ('"text/javascript\\');
+document.write ('" src=\\');
+document.write ('"http://imagec10.247realmedia.com/RealMedia/ads/Creatives/McGrawHill/airbusmilitary_728_singapore_ROS_021312/TFSMFlashWrapper301.js/1328799355\\');
+document.write ('"><\\');
+document.write ('/scr"+"ipt"+">");\n');
+document.write ('//]]>\n');
+document.write ('</script>\n');
+document.write ('<noscript>\n');
+document.write ('	<a href="http://oascentral.aviationweek.com/RealMedia/ads/click_lx.ads/www.aviationweek.com/channel/story/defense/L42/1207988190/Bottom/McGrawHill/airbusmilitary_728_singapore_ROS_021312/airbusmilitary_728_singapore_021312.html/536b374b7055383237744541444c5662" target="_blank">\n');
+document.write ('		<img src="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/McGrawHill/airbusmilitary_728_singapore_ROS_021312/airbusmilitary_728_singapore_021312.gif/1328799355" width="728" height="90" alt="" style="border:0px black solid;" />\n');
+document.write ('	</a>\n');
+document.write ('</noscript>\n');
+document.write ('\n');
+}
+if (position == 'Top') {
+document.write ('<A HREF="http://oascentral.aviationweek.com/RealMedia/ads/click_lx.ads/www.aviationweek.com/channel/story/defense/L42/559049578/Top/McGrawHill/rockwell_300_singapore_ROS_021312/rockwell_300_singapore_021312.jpg/536b374b7055383237744541444c5662;zip=US:13202?x" target="_blank"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/McGrawHill/rockwell_300_singapore_ROS_021312/rockwell_300_singapore_021312.jpg"  WIDTH=300 HEIGHT=250 ALT=""  BORDER="0"></A>');
+}
+if (position == 'x01') {
+document.write ('<table id="container" cellspacing="0" cellpadding="0" width="100%" border="0" summary="Aviation Week Content">\n');
+document.write ('    <tr>\n');
+document.write ('      <td valign="top">\n');
+document.write ('	  <!-- Spotlight -->\n');
+document.write ('        <div id="spotlight">\n');
+document.write ('          <div> <i></i> <i><b><img src="http://www.aviationnow.com/media/images/product_spotlight/OM_logo_113x35.png" width="113" height="35" hspace="0" vspace="0" align="left" /></b></i>\n');
+document.write ('            <table width="65" border="0" align="right" cellpadding="0" cellspacing="0">\n');
+document.write ('              <tr>\n');
+document.write ('                <td align="center"><img src="http://www.aviationnow.com/media/images/product_spotlight/OM_cover_65x84.png" width="65" height="84" /></td>\n');
+document.write ('              </tr>\n');
+document.write ('              <tr>\n');
+document.write ('                <td align="center" nowrap="nowrap"><b><a href="https://a1.ecom01.com/aw_marketdatacenter?s_id=80">Subscribe now!</a></b></td>\n');
+document.write ('              </tr>\n');
+document.write ('            </table>\n');
+document.write ('            <i>O&amp;M</i> is the MRO marketplace: commercial, military and business aviation. MRO executives and managers rely on <i>O&amp;M</i> for information on operations, business, technology, and safety.<br />\n');
+document.write ('            <ul class="arrow">\n');
+document.write ('              <li>First hand viewpoints of top industry executives </li>\n');
+document.write ('              <li> International coverage on safety and regulatory news </li>\n');
+document.write ('              <li> Latest trends and technologies for MRO managers</li>\n');
+document.write ('            </ul>\n');
+document.write ('            <br />\n');
+document.write ('          </div>\n');
+document.write ('        </div>\n');
+document.write ('        <!-- End Spotlight -->\n');
+document.write ('      </td>\n');
+document.write ('    </tr>\n');
+document.write ('  </table>');
+}
+if (position == 'x02') {
+document.write ('<A HREF="http://oascentral.aviationweek.com/RealMedia/ads/click_lx.ads/www.aviationweek.com/channel/story/defense/980314550/x02/default/empty.gif/536b374b7055383237744541444c5662;zip=US:13202?x" target="_top"><IMG SRC="http://imagec10.247realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=1 HEIGHT=1 ALT="" BORDER=0 BORDER="0"></A>');
+}
+}

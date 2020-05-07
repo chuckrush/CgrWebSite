@@ -1,0 +1,121 @@
+/* Print CSS for IWP */
+
+* { margin: 0; padding: 0; }
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 62.5% Arial, Helvetica, sans-serif;
+    background: none;
+    overflow: visible !important;
+}
+
+p, .article-content {
+padding: 0;
+margin: 0 0 15px 0;
+font-size: 13px;
+line-height: 15px;
+}
+
+#wrap {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+    font-size: 1.2em;
+    line-height: 1.8em;
+      margin: 0;
+  padding: 0;
+}
+
+h1 {
+    margin: 5px 0;
+    padding: 0 0 15px 0;
+    line-height: normal;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2, h3, h4 { color: #000000; }
+.componentheading { font-size: inherit; }
+
+#middle-col .home-box .padding,
+#middle-col-wide .padding,
+.padding { margin: 0; padding: 0; }
+
+#left-col {
+float: left;
+width: 200px;
+padding: 0 0 10px 2px;
+margin: 4px 0 0 2px;
+}
+
+#middle-col {
+float: left;
+width: 125px;
+margin: 2px 4px;
+padding: 0 8px;
+}
+
+#middle-col-wide {
+  width: 100%;
+  padding: 0 12px 10px 0px;
+  margin: 0;
+float: none !important;
+overflow: visible !important;
+}
+
+#right-col {
+float: right;
+width: 282px;
+margin: 4px 6px 0 0;
+padding: 0;
+border: 1px solid #C0C0C0;
+}
+
+#header {
+  background: none;
+  display: block;
+  border: none;
+}
+
+#logo {
+margin: 0;
+padding: 0;
+float: none !important;
+}
+
+#home-header { font-style: italic; color: #000000 }
+
+.componentheading span { font-size: 1.8em; display: block; padding: 0; color: #000000; font-size: 1.4em; font-weight: bold; }
+
+.overline { font-weight: bold; font-size: 1.2em; }
+
+.clear {clear: both;}
+
+#home-rightmiddlecol {
+  float: right;
+  width: 140px;
+  margin: 0;
+  padding: 0 0 0 4px;
+  border-left: 1px solid #E3E3E3;
+}
+
+#home-leftmiddlecol {
+  float: left;
+  width: 130px;
+  margin: 0;
+  padding: 0 10px 10px 0;
+}
+
+#footer {
+  float: left;
+  width: 100%;
+  clear: both;
+}
+
+#searchnav, .search, .footercollong, .footercolshort, .footercoltopics, .footercolabout, .footerheader, .footercolnews,
+#login, #nav, .menu, #right-col-wide, #left-col-wide
+{ display: none; }

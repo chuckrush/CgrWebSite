@@ -1,0 +1,667 @@
+@import url("/templates/css/style2.css");
+
+body {
+  color: #000;
+  background-image: url('/templates/defensenewsstand/images/background.jpg');
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-color: #FFF;
+  font-family: Arial, sans-serif;
+}
+
+#main {
+  clear: both;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+a, a:link {color: #003267;}
+
+a:hover {color: #000000;}
+
+a.readmore, a.readon, a.readon-indefense {color: #0d3d6f;}
+
+a.blue-button {
+  display: block;
+  width: 105px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 2px 0 0 0;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  background: url('/templates/indefense/images/button-blue.png') top left no-repeat;
+}
+
+a.blue-button:hover {
+  background: url('/templates/indefense/images/button-black.png') top left no-repeat;
+  text-decoration: none;
+}
+
+h1, .contentheading {color: #000;}
+
+h2 {
+   font-size: 16px;
+   line-height: 18px;
+   margin: 0 0 4px 0;
+   padding: 0;
+}
+
+h3 {
+color: #333;
+font-size: 16px;
+margin: 20px 0px 2px 0px;
+}
+
+.componentheading-blog, .componentheading {
+color: #CC0000;
+margin-top: 6px;
+}
+
+#home-header {
+  color: #000;
+  width: 700px;
+}
+
+#middle-col-wide #home-header {
+  background: url('/templates/indefense/images/bg-main-header-wide.jpg') bottom left;
+}
+
+h2, .contentheading-indefense {color: #093b6d;}
+
+#left-col h3 {
+  color: #000;
+  margin: 2px 0;
+  padding: 0 0 4px 0;
+}
+
+#right-col-wide {
+  float: left;
+  width: 300px;
+  margin: 8px 20px;
+  padding: 0;
+background-image: url('/templates/health/images/health_rightcol_background.jpg');
+background-repeat: repeat-x;
+background-position: center top;
+background-color: #F5F5F5;
+border: 1px solid #C0C0C0;
+}
+
+#right-col {
+float: left;
+width: 214px;
+margin-left: 10px;
+padding-top: 10px;
+font-size: 12px;
+}
+
+#right-col h2 {
+  color: #000;
+}
+
+.rightbox {
+  border: 1px solid #C0C0C0;
+  padding: 4px 10px;
+  margin: 4px;
+  background: #FFF;
+  font-size: 12px;
+}
+
+.rightboxyellow {
+  border: 1px solid #C0C0C0;
+  padding: 4px 10px;
+  margin: 4px;
+  background: #FFFFCC;
+  font-size: 12px;
+}
+
+.loginleft {
+  float: left;
+  margin-right: 2px;
+  width: 255px;
+}
+
+.loginright {
+  float: right;
+  margin-left: 40px;
+}
+
+.insiderhead {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0 12px 0;
+  padding: 0;
+}
+
+#topstorybox {
+  margin: 4px 0 12px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #CCC;
+}
+
+#otherstoriesbox ul {
+  margin: 0;
+  padding: 0;
+}
+
+#otherstoriesbox li {
+  margin: 0 0 4px 16px;
+  padding: 0 0 2px 0;
+  list-style-type: disc;
+}
+
+.topicslist {
+  background: url('/templates/defensenewsstand/images/background_topics.jpg') top left no-repeat;
+  background-repeat: repeat-x;
+  background-position: center top;
+  margin: 10px 0px 2px 0px;
+  padding: 2px 0 6px 0;
+}
+
+.topicslist h2, .topdocsbox h2 {
+  color: #000;
+  margin: 4px 0 2px 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.topicslist p {
+  margin: 0;
+  padding: 0;
+}
+
+.topicslist li {
+  margin: 0 0 4px 16px;
+  padding: 0 0 12px 0;
+  list-style-type: disc;
+}
+
+.topdocsbox {
+  margin: 0 0 10px 0;
+  padding: 0 0 2px 0;
+}
+
+.topdocsbox li {
+  margin: 0 0 2px 16px;
+  padding: 0 0 4px 0;
+  list-style-type: disc;
+}
+
+dt.message {
+  color: #CC0000;
+}
+
+h2 a.rss {
+  background: url('/templates/indefense/images/rss-icon.gif') right no-repeat;
+}
+
+#right-col h2 a.rss {color: #FFFFFF;}
+
+hr {
+  margin: 0 0 15px 0;
+  padding: 0;
+  border: 1px solid #000000;
+}
+
+.l, .left {float: left;}
+
+.r, .right {float: right;}
+
+.clear {clear: both;}
+
+.clear-l {clear: left;}
+
+.clear-r {clear: right;}
+
+.createdate {
+  color: #999;
+  font-weight: bold;
+  margin: 4px 0 12px 0;
+  padding: 4px 0;
+  border-top: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+/* Site Colors */
+
+.blue {color: #4089fc;}
+
+.red {
+  color: #CC0000;
+  font-weight: bold;
+}
+
+.redlarge {
+ color: #CC0000;
+ font-weight: bold;
+ font-size: 16px;
+}
+
+.redsmall {
+  color: #CC0000;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.rednote {
+  font-style: italic;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 4px 0;
+  border-top: 1px solid #C0C0C0;
+  border-bottom: 1px solid #C0C0C0;
+}
+
+.dark-blue {color: #24507e;}
+
+.light-blue {color: #6684aa;}
+/* Navigation */
+
+#nav {
+  background-color: #003366;
+}
+
+#nav ul li a {
+color: #FFFFFF;
+font-size: 12px;
+}
+
+#nav ul li a:hover {background: #3E88FC;}
+
+a#subscribe {
+  color: #FFFFFF;
+}
+
+#nav ul li ul {background: #E9E9E9;}
+
+#nav ul li ul li a {color: #000000;}
+
+#nav ul li.about ul li a {padding: 5px;}
+
+#nav ul li ul li a:hover {background: #3E88FC; color: #FFF;}
+
+a #subscribe {
+  color: #FFFFFF;
+  background: url('/templates/indefense/images/bg-subscribe.gif') top repeat-x #4a4a4a;
+}
+
+a #subscribe:hover {
+  background: url('/templates/indefense/images/bg-rss-hover.gif') top left repeat-x #B84A00;
+}
+
+.overline {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.blurb {
+  border-bottom: 1px solid #C0C0C0;
+  color: #CC0000;
+  font-size: 16px;
+  padding-bottom: 10px;
+  margin-bottom: 4px;
+}
+
+/* Layout */
+
+.home-wrap {border-top: 0;
+  background: #FFF;
+}
+
+.interior-wrap {
+  border-top: 0;
+  background: #FFFFFF;
+}
+
+#header {
+  color: #FFFFFF;
+  border-bottom: 2px solid #000;
+  background: url('/templates/defensenewsstand/images/bg-header.jpg');
+  height: 120px;
+}
+
+#logo {
+  text-align: left;
+  padding: 0px;
+}
+
+#logo img {margin-bottom: 3px;}
+
+#login-page {
+  margin-top: 20px;
+}
+
+#login-page h1 {
+  margin: 10px 0;
+  color: #336699;
+  font-weight: bold;
+}
+
+
+#login input.text {
+  border: 1px solid #FFFFFF;
+  color: #666666;
+}
+
+#login a {color: #FFFFFF;}
+
+#login a.dark {color: #042b52;}
+
+#left-col {
+border-right: 2px solid #C0C0C0;
+float: left;
+margin: 0 10px 0 0;
+padding: 10px 6px 10px 16px;
+width: 525px;
+font-size: 12px;
+}
+
+#left-col img.r, #left-col img.l {
+  border: 1px solid #9a9a9a;
+}
+
+#left-col-wide {
+float: left;
+padding: 10px 6px 10px 16px;
+width: 535px;
+font-size: 12px;
+}
+
+#topbox {
+border: 1px solid #000066;
+margin: 0 10px 0 0;
+padding: 10px;
+background: url('/templates/defensenewsstand/images/backgroundgray.jpg');
+background-repeat: repeat-x;
+background-position: center top;
+background-color: #FFF;
+}
+
+#topbox p {
+line-height: 20px;
+font-size: 14px;
+padding: 0;
+margin: 0;
+}
+
+#topstoriesbox {
+margin: 10px 0 6px 0;
+padding: 10px 0 6px 0;
+border-top: 1px solid #C0C0C0;
+border-bottom: 1px solid #C0C0C0;
+}
+
+#topstoriesbox h2 {
+  color: #CC0000;
+  margin: 4px 0 2px 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.smalllinks {
+  font-size: 12px;
+}
+
+#middle-col {float: left;
+width: 200px;
+border-right: 2px solid #C0C0C0;
+}
+
+#middle-col ul {
+margin: 0;
+padding: 0;
+}
+
+#middle-col .padding li {
+margin: 0 0 10px 6px;
+line-height: 1.1em;
+}
+
+#middle-col .padding h2 {
+margin: 0;
+padding: 0;
+font-size: 14px;
+}
+
+#middle-col-wide {
+  width: 600px;
+  margin: 0 10px;
+  padding: 0 10px;
+  font-size: 12px;
+  background: #FFFFFF;
+}
+
+#middle-col-wider {
+  background: #FFF;
+  padding: 6px;
+  width: 960px;
+  }
+
+#footer {
+    clear: both;
+    border-top: 3px solid #C0C0C0;
+    background: url('/templates/defensenewsstand/images/bckgrnd_graynav.png') top repeat-x;
+    font-size: 12px;
+    text-align: left;
+    color: #333;
+    margin: 10px 0 0 0;
+    padding: 4px 12px 0px 12px;
+    overflow: hidden;
+}
+
+.footercol {
+  float: left;
+  width: 200px;
+  margin: 0 10px;
+  padding: 0 0 20px 0;
+}
+
+.footerheader {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
+}
+
+#footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#footer ul li {
+  margin: 0 0 2px 0;
+  padding: 0;
+}
+
+#footer a {
+text-decoration: none;
+color: #666;
+}
+
+#footer a:hover {
+text-decoration: underline;
+color: #000;
+}
+
+#copyright {
+clear: both;
+margin: 10px 0;
+padding: 10px 0px 0px 4px;
+border-top: 1px solid #C0C0C0;
+font-size: 12px;
+}
+
+/* Content Styling */
+
+#insider {background: #FFFFFF;}
+
+.background-gradient {
+  background: url('/templates/indefense/images/side-gradient.gif') top repeat-x;
+}
+
+#middle-col .home-box h2 {
+  color: #4c4c4c;
+  background: url('/templates/indefense/images/bg-sub-header.jpg') bottom repeat-x;
+  border: 1px solid #c9c9c9;
+  border-bottom: 0;
+}
+
+#middle-col .home-box .padding {border: 1px solid #c9c9c9;}
+
+.morebutton {
+  margin-top: 10px;
+}
+
+a.arrow {
+  color: #4c4c4c;
+  background: url('/templates/indefense/images/arrow-circle.gif') right no-repeat;
+}
+
+#middle-col .home-box ul li {
+  background: url('/templates/indefense/images/red-arrow.gif') 0px 3px no-repeat;
+}
+
+#middle-col .wide-box {
+  background: #f2f2f2;
+  border: 1px solid #c9c9c9;
+}
+
+#middle-col .wide-box h2 {
+  color: #4c4c4c;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+#middle-col h2 {
+  margin: 4px 0 2px 0;
+  padding: 0;
+  font-size: 16px;
+  color: #000;
+}
+
+#middle-col .wide-box h2 a.arrow {
+  color: #4c4c4c;
+  background: url('/templates/indefense/images/arrow-circle.gif') right no-repeat;
+}
+
+#middle-col .wide-box a {color: #6684aa;}
+
+#middle-col .wide-box a.arrow {color: #4c4c4c;}
+
+#middle-col .wide-box .block {
+  border-right: 1px solid #c9c9c9;
+}
+
+#middle-col .wide-box .block .block-number3 {border: 0;}
+
+.datebreak {color: #990000;}
+
+#searchnav {
+  margin: 0;
+  padding: 4px;
+  background: url('/templates/indefense/images/bckgrnd_graynav.png') top repeat-x;
+  height: 30px;
+  display: bolck;
+  clear: both;
+  border-bottom: 1px solid #C0C0C0;
+  font-size: 12px;
+}
+
+.searchleft {
+  width: 300px;
+  float: left;
+  color: #003366;
+  text-align: left;
+  font-weight: bold;
+  padding: 10px;
+  }
+
+.search {
+  text-align: right;
+  width: 400px;
+  float: right;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.search input {border: 1px solid #000; float: none; }
+
+.search input.button {margin: 4px 0 -6px 4px;}
+
+#searchResults {
+  border-right: 0px solid #E9E9E9;
+  padding: 10px;
+  width: 60%;
+  float: left;
+}
+#searchAgain {
+  border: 1px solid #E9E9E9;
+  padding: 10px;
+  float: right;
+  background-color: #FFFFCC;
+}
+
+
+.graybox {
+  border-top: 8px solid #CCC;
+  background: #F3F3F3;
+  padding: 2px 8px 8px 8px;
+  margin-bottom: 10px;
+  }
+
+.graybox ul {
+margin: 0;
+padding: 0 0 0 16px;
+}
+
+.graybox li {
+margin: 0 0 10px 0;
+line-height: 1.1em;
+}
+
+.mootabs_title {border-bottom: 1px solid #c9c9c9;}
+
+.mootabs_title li {
+  color: #4C4C4C;
+  border-top: 1px solid #c9c9c9;
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+}
+
+.mootabs_title li.active {background: #F3F3F3;}
+
+.mootabs_panel {
+  background: url('/templates/indefense/images/side-gradient.gif') top repeat-x #F3F3F3;
+  border: 1px solid #c9c9c9;
+  border-top: 0;
+}
+
+#newsletterimage {
+  clear: left;
+  float: right;
+  margin-left: 6px;
+}
+
+.social {
+  width: 220px;
+  float: right;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 4px 0 6px 0;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.social a {
+  color: #FFFFFF;
+}
+
+.social img {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
