@@ -2,7 +2,7 @@
 
 CGI_ROOT=/usr/lib/cgi-bin
 HTML_ROOT=/var/www/html
-
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # #########################
 # First build CGI directory
@@ -30,12 +30,12 @@ chown www-data:www-data $CGI_ROOT/kmzout
 mkdir $CGI_ROOT/KmlFileImages
 
 # Copy all the cgi related files to CGI_ROOT
-cp -a usr_lib_cgi-bin/* $CGI_ROOT 
+cp -a $SCRIPT_DIR/usr_lib_cgi-bin/* $CGI_ROOT 
 
 # PERMISSIONS 
 # Set evey file and directory to root:root and permissions to 755
-sudo chown -R root:root $CGI_ROOT/*
-sudo chmod -R 755 $CGI_ROOT/*
+chown -R root:root $CGI_ROOT/*
+chmod -R 755 $CGI_ROOT/*
 
 # Set needed special permissions
 chown www-data:www-data $CGI_ROOT/kmzout
@@ -71,12 +71,12 @@ mkdir $HTML_ROOT/kmzout
 chown www-data:www-data $HTML_ROOT/kmzout
 
 # Copy all the site related files to HTML_ROOT
-cp -a var_www_html/* $HTML_ROOT 
+cp -a $SCRIPT_DIR/var_www_html/* $HTML_ROOT 
 
 # PERMISSIONS 
 # Set evey file and directory to root:root and permissions to 755
-sudo chown -R root:root $HTML_ROOT/*
-sudo chmod -R 755 $HTML_ROOT/*
+chown -R root:root $HTML_ROOT/*
+chmod -R 755 $HTML_ROOT/*
 
 # Set needed special permissions
 chown www-data:www-data $HTML_ROOT/kmzout
