@@ -14,6 +14,8 @@ RUN /root/build_site && rm -rf /root/*
 
 RUN mkdir /var/run/apache2
 
+RUN a2enmod cgi
+
 ENTRYPOINT [ "/bin/bash", "docker-entrypoint.sh" ]
 
 EXPOSE 80 
