@@ -16,6 +16,8 @@ RUN mkdir /var/run/apache2
 
 RUN a2enmod cgi
 
+RUN echo "127.0.0.1 charlesgrush.com" >> /etc/hosts
+
 ENTRYPOINT [ "/bin/bash", "docker-entrypoint.sh" ]
 
 EXPOSE 80 
