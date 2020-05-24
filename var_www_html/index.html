@@ -4,26 +4,8 @@
 <head>
 	<title>CharlesGRush.com</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-	<meta name="generator" content="Jekyll v3.8.6">
-	<link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
-	<!-- Bootstrap core CSS -->
-	<link href="\bootstrap-4.4.1\dist\css\bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" href="\bootstrap-4.4.1\site\docs\4.4\assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-	<link rel="icon" href="\bootstrap-4.4.1\site\docs\4.4\assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-	<link rel="icon" href="\bootstrap-4.4.1\site\docs\4.4\assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-	<link rel="manifest" href="\bootstrap-4.4.1\site\docs\4.4\assets/img/favicons/manifest.json">
-	<link rel="mask-icon" href="\bootstrap-4.4.1\site\docs\4.4\assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-	<link rel="icon" href="\bootstrap-4.4.1\site\docs\4.4\assets/img/favicons/favicon.ico">
-	<meta name="msapplication-config" content="\bootstrap-4.4.1\site\docs\4.4\assets/img/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#563d7c">
-
-	<!-- Custom styles for this template -->
-	<link href="starter-template.css" rel="stylesheet">
+	<!-- Load common top of file boostrap stuff -->
+	<div data-includeHTML="/PagePieceParts/Bootstrap_TopMatter.html"></div>
 
 	<!-- CSS Unique to this html file -->
 	<!-- **************************** -->
@@ -43,16 +25,9 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark default"> 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"> <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a> </li>
-				<li class="nav-item"> <a class="nav-link" href="RadioActivities/RadioActivities.html">Ham & SWL</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="OnlineInterview/OnlineInterview.html">Work Experience</a> </li>
-			</ul>
-		</div>
-	</nav>
+
+	<!-- Load common navigation bar -->
+	<div data-includeHTML="/PagePieceParts/navbar.html"></div>
 
 	<main role="main" class="container-fluid">
 		<div class="starter-template">
@@ -100,11 +75,20 @@
 </main>
 	
 	<!-- /.container -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script>
-	window.jQuery || document.write('<script src="C:\Users\crush\OneDrive\Documents\SwLibraries\bootstrap-4.4.1\dist\js\vendor\jquery.slim.min.js"><\/script>')
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+	
+	<script src="\bootstrap-4.4.1\dist\js\bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>]
+	
+	<!-- Load bootstrap stuff that normally lives at top. Also load nav bar. -->
+   	<!-- Got this strategy from web site -->
+   	<!-- https://stackoverflow.com/questions/15320801/how-to-include-an-html-file-with-jquery/15320839  -->
+   	<script>
+    $(document).ready(function () {
+        $("div[data-includeHTML]").each(function () {                
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
 	</script>
-	<script src="\bootstrap-4.4.1\dist\js\bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
 
 </body>
 
