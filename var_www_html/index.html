@@ -28,7 +28,7 @@
 	<!-- CSS Unique to this html file -->
 	<!-- **************************** -->
 	<style>
-		.features {
+	.features {
 		margin: 1em auto;
 		padding: 1em;
 		position: relative;
@@ -39,6 +39,8 @@
 	<!-- ************ -->
 	<!--  Style file for footer -->
 	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<!--  Style file for banner image. This keeps banner image same width as rest of site. -->
+	<link rel="stylesheet" type="text/css" href="/css/banner_img.css">
 
 </head>
 
@@ -55,49 +57,54 @@
 	</nav>
 
 	<main role="main" class="container-fluid">
-		<div class="starter-template">
+		<div class="container-fluid">
 			<a href="SharedContent/Radio/PictureOrigins.html">
-				<img class="img-fluid" src="SharedContent/Radio/RadioCollage.jpg" />
+				<img  class="banner_img" src="SharedContent/Radio/RadioCollage.jpg" />
 			</a>
-			<div class="container features">
-				<div class="row">
-					<div class="col-sm-12 center-block text-center">
-						<h1 class="text-uppercase font-weight-bold">Welcome. Thanks for visting.</h1>
-					</div>
-				</div>
-			</div>
-			<div class="container features">
-				<div class="row">
-					<div class="col-sm-6 center-block text-center">
-						<a href="/RadioActivities/RadioActivities.html">
-							<img class="img-fluid" src="/HomePageRadioImage.jpg" />
-						</a>
-					</div>
-					<div class="col-sm-6 center-block text-center">
-						<a href="/OnlineInterview/OnlineInterview.html">
-							<img class="img-fluid" src="/HomePageWorkStory.jpg" />
-						</a>
-					</div>
-				</div>
-			</div>
-			<footer class="page-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-md-9 col-sm-12">
-						</div>
-						<div class="col-lg-4 col-md-3 col-sm-12 text-left">
-							<h6 class="text-uppercase font-weight-bold">Contact</h6>
-							<p>
-								Chuck Rush
-								<br />info@CharlesGRush.com
-							</p>
-						</div>
-					</div>
-					<div class="footer-copyright text-center">© 2020 Copyright: CharlesGRush.com</div>
-				</div>
-			</footer>
 		</div>
-</main>
+		<div class="container features">
+			<div class="row">
+				<div class="col-sm-12 center-block text-center">
+					<h1 class="text-uppercase font-weight-bold">Welcome. Thanks for visting.</h1>
+				</div>
+			</div>
+		</div>
+		<div class="container features">
+			<div class="row">
+				<div class="col-sm-6 center-block text-center">
+					<a href="/RadioActivities/RadioActivities.html">
+						<img class="img-fluid" src="/HomePageRadioImage.jpg" />
+					</a>
+				</div>
+				<div class="col-sm-6 center-block text-center">
+					<a href="/OnlineInterview/OnlineInterview.html">
+						<img class="img-fluid" src="/HomePageWorkStory.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="page-footer font-small blue pt-4">
+			<div class="container-fluid text-center text-md-left">
+			<div class="row">
+				<div class="col-md-9 mt-md-0 mt-3">
+				</div>
+				<hr class="clearfix w-100 d-md-none pb-3">
+				<div class="col-md-3 mb-md-0 mb-3">
+					<h6 class="text-uppercase font-weight-bold">Contact</h6>
+					<p>
+						Chuck Rush
+						<br />info@CharlesGRush.com
+					</p>
+				</div>
+			</div>
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2020 Copyright:
+				<a href="https://CharlesGRush/"> CharlesGRush.com</a>
+			</div>
+		</footer>
+	</main>
 	
 	<!-- /.container -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
