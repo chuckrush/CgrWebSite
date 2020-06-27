@@ -1,0 +1,72 @@
+ sudo docker exec -it 2ddcb127b8b440413e3b88d01352697c48d5bfa30bb06996a8c70c417f94083d bash
+
+sudo docker logs 2ddcb127b8b440413e3b88d01352697c48d5bfa30bb06996a8c70c417f94083d
+s
+
+# To test treh docker image
+# *************************
+sudo service apache2 stop
+sudo docker run -d -p 80:80 image_number
+
+Handy Commnds
+du -sh *
+
+sudo docker build .
+
+sudo docker ps
+
+sudo docker run -d -p 80:80 image_number
+sudo docker stop image container
+sudo docker  system prune
+docker rm <container-id>
+
+Steps to Build Docker Image
+***************************
+# Does stuff in Dockerfile - Instructions to build docker image
+sudo docker build .
+#If you run out of space - sudo docker system prune
+# Output looks like this
+Removing intermediate container 1b405f478c6f
+ ---> 21d016e49708
+Step 13/13 : CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+ ---> Running in 339241b290e3
+Removing intermediate container 339241b290e3
+ ---> 9b300ec35f04 <----- This is image number
+Successfully built 9b300ec35f04
+crush@ubuntu:~/web_site/the_web_site$ 
+
+# Test it before deploy. See above
+
+
+Steps to deploy
+***************
+# Saves docker image to a file
+sudo docker image save fad318f832e2 -o docker_image_to_deploy_001
+
+# This command copies it up to my VM on kamatera
+sudo cat docker_image_to_deploy_001 | ssh 104.238.215.67 docker image load
+
+# Deploy the container
+ssh 104.238.215.67 
+docker images shows me images on my kamatera VM.
+docker ps to get container ID.
+docker stop containerID on old one
+docker run -d -p 80:80 imageID
+
+# Clean up, Clean up
+docker ps -a # shows all containers running and stopped.
+docker images # Show kme what is there.
+docker system prune on kamatera VM.
+# On local machine - Make sure you stop docker you tested.
+docker system  prunes on local box.
+
+
+Server IP
+104.238.215.67
+
+
+
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS                NAMES
+9546aca83787        fad318f832e2        "/bin/bash docker-en…"   About a minute ago   Up About a minute   0.0.0.0:80->80/tcp   wizardly_gould
+
+

@@ -52,27 +52,34 @@
 	<main role="main" class="container-fluid">
 
 		<div class="starter-template">
-			<a href="../../SharedContent/Radio/PictureOrigins.html">
-				<img class="img-fluid" src="../../SharedContent/Radio/RadioCollage.jpg" />
-			</a>
+			<div class="container-fluid">
+				<div class="row">
+					<a href="/SharedContent/Radio/PictureOrigins.html">
+					<img  class="banner_img" src="/SharedContent/Radio/RadioCollage.jpg" />
+					</a>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row mt-3">
+					<div class="col-sm-12">
+						<h1>AM Station Map</h1>
+						<h2>Create and download customized map of AM broadcast stations</h2>							
+						<p>AM broadcast station DXing is a lot of fun. After dark you can often hear many stations on non-local
+							channels. I built myself a loop antenna so I could null out some stations broadside to the antenna and
+							log more stations. After building the antenna I adopted a practice of tuning to a frequency, then
+							rotating the antenna and seeing what I could hear. This was fun but after a while I wanted to take a
+							more focused approach. <b>I decided it would be nice to know power, range, and bearing for all stations
+								on a particular frequency.</b></p>
+						<p>I constructed a program to read AM station information from a database maintained by the FCC. I process
+							the data and store it in an SQL database on my server. You, the user, can enter your QTH and request a
+							customized Google Earth .kmz file that shows all AM stations in the database. On the map, the icons for
+							each station show daytime, nighttime, and critical hours power as well as range and bearing to your QTH.
+						</p>
 
-			<div>
-				<h1>AM Station Map</h1>
-				<h2>Create and download customized map of AM broadcast stations</h2>
-				<p>AM broadcast station DXing is a lot of fun. After dark you can often hear many stations on non-local
-					channels. I built myself a loop antenna so I could null out some stations broadside to the antenna and
-					log more stations. After building the antenna I adopted a practice of tuning to a frequency, then
-					rotating the antenna and seeing what I could hear. This was fun but after a while I wanted to take a
-					more focused approach. <b>I decided it would be nice to know power, range, and bearing for all stations
-						on a particular frequency.</b></p>
-				<p>I constructed a program to read AM station information from a database maintained by the FCC. I process
-					the data and store it in an SQL database on my server. You, the user, can enter your QTH and request a
-					customized Google Earth .kmz file that shows all AM stations in the database. On the map, the icons for
-					each station show daytime, nighttime, and critical hours power as well as range and bearing to your QTH.
-				</p>
-
-				<button onclick="window.location.href = 'http://charlesgrush.com/cgi-bin/CGI-exe.cgi';" class="btn btn-primary">Try it</button>
-				<br><br>
+						<button onclick="window.location.href = 'http://charlesgrush.com/cgi-bin/CGI-exe.cgi';" class="btn btn-primary">Try it</button>
+						<br><br>
+					</div>
+				</div>
 			</div>
 
 			<footer class="page-footer">
@@ -85,7 +92,8 @@
 							<a href="mailto:info@CharlesGRush.com">info@CharlesGRush.com</a>.<br>
 						</div>
 							</div>
-					<div class="footer-copyright text-center">© 2020 Copyright: CharlesGRush.com</div>
+					<div class="footer-copyright text-center">© 2020 Copyright: Charles Rush
+					</div>
 				</div>
 			</footer>
 		</div>
