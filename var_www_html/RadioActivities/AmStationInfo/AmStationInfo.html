@@ -1,9 +1,8 @@
 ﻿<!doctype html>
-
-<html>
+<html lang="en">
 
 <head>
-	<title>AM BCB Map</title>
+	<title>Am Station Info</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,6 +32,8 @@
 	<!-- ************ -->
 	<!--  Style file for footer -->
 	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<!--  Style file for banner image. This keeps banner image same width as rest of site. -->
+	<link rel="stylesheet" type="text/css" href="/css/banner_img.css">
 
 </head>
 
@@ -44,57 +45,54 @@
 				<li class="nav-item active"> <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/RadioActivities/RadioActivities.html">Ham & SWL</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/OnlineInterview/OnlineInterview.html">Work Experience</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="/FunStuff/FunStuff.html">Fun Stuff</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/FunStuff/FunStuff.html">Fun Stuff</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/HomeProjects/HomeProjects.html">Home Projects</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/ReviewsAndRecommendations/ReviewsAndRecommendations.html">Reviews & Recommendations</a> </li>			</ul>
+			</ul>
 		</div>
 	</nav>
 
 	<main role="main" class="container-fluid">
-
 		<div class="starter-template">
-			<div class="container-fluid">
+			<a href="/SharedContent/Radio/PictureOrigins.html">
+				<img  class="banner_img" src="/SharedContent/Radio/RadioCollage.jpg" />
+			</a>
+			<div class="row mt-3">
+				<div class="col-sm-12">
+					<h1>AM Station Map</h1>
+					<h2>Create and download customized map of AM broadcast stations</h2>							
+					<p>AM broadcast station DXing is a lot of fun. After dark you can often hear many stations on non-local
+						channels. I built myself a loop antenna so I could null out some stations broadside to the antenna and
+						log more stations. After building the antenna I adopted a practice of tuning to a frequency, then
+						rotating the antenna and seeing what I could hear. This was fun but after a while I wanted to take a
+						more focused approach. <b>I decided it would be nice to know power, range, and bearing for all stations
+							on a particular frequency.</b></p>
+					<p>I constructed a program to read AM station information from a database maintained by the FCC. I process
+						the data and store it in an SQL database on my server. You, the user, can enter your QTH and request a
+						customized Google Earth .kmz file that shows all AM stations in the database. On the map, the icons for
+						each station show daytime, nighttime, and critical hours power as well as range and bearing to your QTH.
+					</p>
+
+					<button onclick="window.location.href = 'http://charlesgrush.com/cgi-bin/CGI-exe.cgi';" class="btn btn-primary">Try it</button>
+					<!-- button onclick="window.location.href = 'http://127.0.0.1/cgi-bin/CGI-exe.cgi';" class="btn btn-primary">Try it</button> -->
+					<br><br>
+				</div>
+			</div>
+
+			<!-- Footer -->
+			<footer class="page-footer font-small blue pt-4">
+				<div class="container-fluid text-center text-md-left">
 				<div class="row">
-					<a href="/SharedContent/Radio/PictureOrigins.html">
-					<img  class="banner_img" src="/SharedContent/Radio/RadioCollage.jpg" />
-					</a>
-				</div>
-			</div>
-			<div class="container-fluid">
-				<div class="row mt-3">
-					<div class="col-sm-12">
-						<h1>AM Station Map</h1>
-						<h2>Create and download customized map of AM broadcast stations</h2>							
-						<p>AM broadcast station DXing is a lot of fun. After dark you can often hear many stations on non-local
-							channels. I built myself a loop antenna so I could null out some stations broadside to the antenna and
-							log more stations. After building the antenna I adopted a practice of tuning to a frequency, then
-							rotating the antenna and seeing what I could hear. This was fun but after a while I wanted to take a
-							more focused approach. <b>I decided it would be nice to know power, range, and bearing for all stations
-								on a particular frequency.</b></p>
-						<p>I constructed a program to read AM station information from a database maintained by the FCC. I process
-							the data and store it in an SQL database on my server. You, the user, can enter your QTH and request a
-							customized Google Earth .kmz file that shows all AM stations in the database. On the map, the icons for
-							each station show daytime, nighttime, and critical hours power as well as range and bearing to your QTH.
-						</p>
-
-						<button onclick="window.location.href = 'http://charlesgrush.com/cgi-bin/CGI-exe.cgi';" class="btn btn-primary">Try it</button>
-						<br><br>
+					<div class="col-md-9 mt-md-0 mt-3">
+					</div>
+					<hr class="clearfix w-100 d-md-none pb-3">
+					<div class="col-md-3 mb-md-0 mb-3">
+						<h6 class="text-uppercase font-weight-bold">Contact</h6>
+						<a href="mailto:info@CharlesGRush.com">info@CharlesGRush.com</a>.<br>
 					</div>
 				</div>
-			</div>
-
-			<footer class="page-footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-md-9 col-sm-12">
-						</div>
-						<div class="col-md-3 mb-md-0 mb-3">
-							<h6 class="text-uppercase font-weight-bold">Contact</h6>
-							<a href="mailto:info@CharlesGRush.com">info@CharlesGRush.com</a>.<br>
-						</div>
-							</div>
-					<div class="footer-copyright text-center">© 2020 Copyright: Charles Rush
-					</div>
+				<!-- Copyright -->
+				<div class="footer-copyright text-center py-3">© 2020 Copyright: Charles Rush
 				</div>
 			</footer>
 		</div>

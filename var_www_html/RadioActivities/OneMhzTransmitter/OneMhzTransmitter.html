@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>One MHz Transmitter/Signal Source</title>
+	<title>One Megahert Transmitter/Signal Source</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,11 +27,7 @@
 
 	<!-- CSS Unique to this html file -->
 	<!-- **************************** -->
-	<style>
-		.border-5 {
-    		border-width:5px !important;
-		}
-	</style>
+
 	<!-- CSS Includes -->
 	<!-- ************ -->
 	<!--  Style file for footer -->
@@ -49,169 +45,164 @@
 				<li class="nav-item active"> <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/RadioActivities/RadioActivities.html">Ham & SWL</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/OnlineInterview/OnlineInterview.html">Work Experience</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="/FunStuff/FunStuff.html">Fun Stuff</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="/FunStuff/FunStuff.html">Fun Stuff</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/HomeProjects/HomeProjects.html">Home Projects</a> </li>
 				<li class="nav-item"> <a class="nav-link" href="/ReviewsAndRecommendations/ReviewsAndRecommendations.html">Reviews & Recommendations</a> </li>			</ul>
+			</ul>
 		</div>
 	</nav>
 
 	<main role="main" class="container-fluid">
 		<div class="starter-template">
-			<div class="container-fluid">
-				<div class="row">
-					<a href="/SharedContent/Radio/PictureOrigins.html">
-					<img  class="banner_img" src="/SharedContent/Radio/RadioCollage.jpg" />
+			<a href="/SharedContent/Radio/PictureOrigins.html">
+			<img  class="banner_img" src="/SharedContent/Radio/RadioCollage.jpg" />
+			</a>
+
+				<div class="row  mt-5">
+				<div class="col-sm-12 center-blocker ">
+					<h1 class="text-uppercase text-center font-weight-bold mb-5">One MHz Transmitter/Signal Source</h1>
+					<p class="text-left text-wrap">Four or five years ago I built am AM Broadcast Band box loop antenna. It was the first one I built.
+													It works pretty well but recently I started wondering if it could work better. I used a 
+													non-trivial amount of metal in the antenna. It rests on a metal carousel. Four metal L brackets
+													are used to fasten the antenna structure to the base. In addition, I used several terminal strips
+													to test different wiring and tuning strategies. And lastly, the two cables, one for signal and one for 
+													a varactor tuning circuit attach at top of antenna and tend to droop down across face of antenna.
+					</p>
+					<p class="text-left text-wrap">I was talking to my father about it and I told him I was going to switch to a plastic carousel
+													and get rid of all the metal I could in the construction. He said "Sounds like a good idea. I wonder
+													how much difference it will make. It would be neat to try and measure it." He was right, that did sound 
+													like a fun project.
+					</p>
+					<p class="text-left text-wrap">So, the first order of business was to come up with a signal source for the test. I considered
+													just using a local commercial station as a signal source. But, that did not sit well with me.
+													The signal strength "should" be constant but, it just did not feel like I had enough control over
+													the test conditions. I decided to build a small signal source.
+					</p>
+					<p class="text-left text-wrap">I am a software guy who programs down near the hardware. To be honest, the idea of designing an 
+						RF signal source was intimidating. I don't have a hidden electronic design superpower, but I have the next best thing, a father 
+						who is an electrical engineer. Dad spent his career doing electronics for high energy physics experiments, the 
+						<a href="https://physics.osu.edu/discovery-higgs-boson-lhc-experiments" target="_blank">atom smashing</a> kind.
+						Electronics he designed was used at the LHC to discover the Higgs Boson. Cool stuff. Dad pointed me to a 1 MHz oscillator in a can 
+						at Jameco Electronics. Quickly, the project became less scary.
+					</p>
+
+				</div>
+			</div>
+			<div class="row  mt-2">
+				<div class="col-sm-9">
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">Schematic</h3>
+					<a href="/RadioActivities/OneMhzTransmitter/Images/OneMhzTransmitter_Rev001.jpg" target="_blank">
+						<img style=float:top src="/RadioActivities/OneMhzTransmitter/Images/OneMhzTransmitter_Rev001.jpg" class="img-fluid  mx-auto d-block" />
+					</a>
+					<p>I used KiCad to draw this schematic. The learning curve is not too bad. It's amazing what you get for free.</p>
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">Circuit Description</h3>
+					<p class="text-left text-wrap">The planned use for this transmitter is to use it as a signal
+													source for making antenna pattern measurements of my broadcast band box loop antenna.
+					</p>
+					<p class="text-left text-wrap"><b>7805 Voltage Regulator:</b> I figured that the output amplitude of the oscillator will
+													vary with VCC. Therefore, applying the same VCC to the oscillator
+													each and every time so I get a repeatable output seemed like a worthy design goal.
+					</p>
+					<p class="text-left text-wrap"> A 7805 regulator needs an input voltage at least 2 volts greater than the 
+													desired output voltage. VCC for the oscillator is 5 volts so a 9-volt battery 
+													was a logical choice. And yes, we are throwing away a lot of energy in 
+													the regulator but that is not really a concern here. The transmitter will 
+													only be on when	making measurements and the power requirement of the 
+													oscillator is 7 milliamps at 5 volts, a whopping 35 milliwatts. For this 
+													application, conserving power is not a concern. And, batteries are inexpensive.
+					</p>
+					<p class="text-left text-wrap"><b>Capacitor C2:</b>The oscillator generates a square wave output. During the low to
+													high transition, current to the oscillator spikes. Regulators are
+													not so good at quickly varying current. That is why we have capacitor C2.
+													It stays charged up and provides extra energy when the current to the oscillator
+													spikes.
+					</p>
+					<p class="text-left text-wrap"><b>Capacitor C3:</b>This protects the oscillator if the output is shorted to ground.
+													If asked, my father, a hardware guy, would probably say "We need to design defensively.""
+													What he would really be thinking is "Even more so when a software guy", I think he meant me, "will be using this device." 
+					</p>
+					<p class="text-left text-wrap"><b>Diodes D1 and D2:</b> These are 1N4001 diodes. Any low level signal diode can  be used here. The transmitter
+													may be hooked to antennas with non-trivial inductance. During R&D Expedition 2020
+													Dad and I hooked the antenna output up to a broadband transformer and a Loop Antenna. 
+													D1 and D2 protect against any voltage spikes that may occur with an inductive load.
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">Parts & Equipment</h3>
+					<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_PartsList.pdf" target="_blank">Parts List</a>
+					<p class="text-left text-wrap">It is hard to do electronics without an oscillioscope. I bought this 
+						<a href="/RadioActivities/OneMhzTransmitter/Images/ScopeOnAmazon.jpg" target="_blank">small scope </a>for
+						less than $100 from amazon.com</p>
+					<a href="/RadioActivities/OneMhzTransmitter/Images/ScopePictureOff.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/ScopePictureOff.jpg" class="img-fluid  mx-auto d-block" />
+					</a>
+				</div>
+			</div>
+			<div class="row  mt-2">
+				<div class="col-sm-12"></div>
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">Building It</h3>
+				</div>
+			</div>
+			<div class="row  mt-2">
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewPerfBoard.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewPerfBoard.jpg" class="img-fluid  mx-auto d-block" />
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BottomPerfBoardBottomLid.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BottomPerfBoardBottomLid.jpg" class="img-fluid  mb-3 mx-auto d-block" />
+					</a>
+					<p> The more solder the better. Right? Every time I build something on my own, my appreciation
+						for the excellent technicians at my work grows.
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BotPErfBotLidWithStandoffs.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BotPErfBotLidWithStandoffs.jpg" class="img-fluid  mb-3 mx-auto d-block" />
+					</a>
+					<p>There is going to be a rev 02 version of the transmitter. I plan to add connectors to  the wires that
+						go to the SO-239 and 3.5mm antenna connectors. That will make it easier to make mods to the board.
+						Currently, the connectors hard wired to the board. I also plan on adding a broadband transformer to
+						boost the output voltage signal level.
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_SideViewLidAssmebled.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_SideViewLidAssmebled.jpg" class="img-fluid  mx-auto d-block" />
 					</a>
 				</div>
 			</div>
 
-			<div class="container-fluid">
-				<div class="row  mt-5">
-					<div class="col-sm-12 center-blocker ">
-						<h1 class="text-uppercase text-center font-weight-bold mb-5">One MHz Transmitter/Signal Source</h1>
-						<p class="text-left text-wrap">Four or five years ago I built am AM Broadcast Band box loop antenna. It was the first one I built.
-													   It works pretty well but recently I started wondering if it could work better. I used a 
-													   non-trivial amount of metal in the antenna. It rests on a metal carousel. Four metal L brackets
-													   are used to fasten the antenna structure to the base. In addition, I used several terminal strips
-													   to test different wiring and tuning strategies. And lastly, the two cables, one for signal and one for 
-													   a varactor tuning circuit attach at top of antenna and tend to droop down across face of antenna.
-						</p>
-						<p class="text-left text-wrap">I was talking to my father about it and I told him I was going to switch to a plastic carousel
-													   and get rid of all the metal I could in the construction. He said "Sounds like a good idea. I wonder
-													   how much difference it will make. It would be neat to try and measure it." He was right, that did sound 
-													   like a fun project.
-					   </p>
-						<p class="text-left text-wrap">So, the first order of business was to come up with a signal source for the test. I considered
-													   just using a local commercial station as a signal source. But, that did not sit well with me.
-													   The signal strength "should" be constant but, it just did not feel like I had enough control over
-													   the test conditions. I decided to build a small signal source.
-						</p>
-						<p class="text-left text-wrap">I am a software guy who programs down near the hardware. To be honest, the idea of designing an 
-							RF signal source was intimidating. I don't have a hidden electronic design superpower, but I have the next best thing, a father 
-							who is an electrical engineer. Dad spent his career doing electronics for high energy physics experiments, the 
-							<a href="https://physics.osu.edu/discovery-higgs-boson-lhc-experiments" target="_blank">atom smashing</a> kind.
-							Electronics he designed was used at the LHC to discover the Higgs Boson. Cool stuff. Dad pointed me to a 1 MHz oscillator in a can 
-							at Jameco Electronics. Quickly, the project became less scary.
-						</p>
-
-					</div>
+			<div class="row  mt-2">
+				<div class="col-sm-12"></div>
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">Finished Product</h3>
 				</div>
-				<div class="row  mt-2">
-					<div class="col-sm-9">
-						<h3 class="text-uppercase text-center font-weight-bold mb-2">Schematic</h3>
-						<a href="/RadioActivities/OneMhzTransmitter/Images/OneMhzTransmitter_Rev001.jpg" target="_blank">
-							<img style=float:top src="/RadioActivities/OneMhzTransmitter/Images/OneMhzTransmitter_Rev001.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-						<p>I used KiCad to draw this schematic. The learning curve is not too bad. It's amazing what you get for free.</p>
-						<h3 class="text-uppercase text-center font-weight-bold mb-2">Circuit Description</h3>
-						<p class="text-left text-wrap">The planned use for this transmitter is to use it as a signal
-														source for making antenna pattern measurements of my broadcast band box loop antenna.
-						</p>
-						<p class="text-left text-wrap"><b>7805 Voltage Regulator:</b> I figured that the output amplitude of the oscillator will
-														vary with VCC. Therefore, applying the same VCC to the oscillator
-														each and every time so I get a repeatable output seemed like a worthy design goal.
-						</p>
-						<p class="text-left text-wrap"> A 7805 regulator needs an input voltage at least 2 volts greater than the 
-														desired output voltage. VCC for the oscillator is 5 volts so a 9-volt battery 
-														was a logical choice. And yes, we are throwing away a lot of energy in 
-														the regulator but that is not really a concern here. The transmitter will 
-														only be on when	making measurements and the power requirement of the 
-														oscillator is 7 milliamps at 5 volts, a whopping 35 milliwatts. For this 
-														application, conserving power is not a concern. And, batteries are inexpensive.
-						</p>
-						<p class="text-left text-wrap"><b>Capacitor C2:</b>The oscillator generates a square wave output. During the low to
-														high transition, current to the oscillator spikes. Regulators are
-														not so good at quickly varying current. That is why we have capacitor C2.
-														It stays charged up and provides extra energy when the current to the oscillator
-														spikes.
-						</p>
-						<p class="text-left text-wrap"><b>Capacitor C3:</b>This protects the oscillator if the output is shorted to ground.
-														If asked, my father, a hardware guy, would probably say "We need to design defensively.""
-														What he would really be thinking is "Even more so when a software guy", I think he meant me, "will be using this device." 
-						</p>
-						<p class="text-left text-wrap"><b>Diodes D1 and D2:</b> These are 1N4001 diodes. Any low level signal diode can  be used here. The transmitter
-														may be hooked to antennas with non-trivial inductance. During R&D Expedition 2020
-														Dad and I hooked the antenna output up to a broadband transformer and a Loop Antenna. 
-														D1 and D2 protect against any voltage spikes that may occur with an inductive load.
-						</p>
-					</div>
-					<div class="col-sm-3">
-						<h3 class="text-uppercase text-center font-weight-bold mb-2">Parts & Equipment</h3>
-						<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_PartsList.pdf" target="_blank">Parts List</a>
-						<p class="text-left text-wrap">It is hard to do electronics without an oscillioscope. I bought this 
-							<a href="/RadioActivities/OneMhzTransmitter/Images/ScopeOnAmazon.jpg" target="_blank">small scope </a>for
-							less than $100 from amazon.com</p>
-						<a href="/RadioActivities/OneMhzTransmitter/Images/ScopePictureOff.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/ScopePictureOff.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-					</div>
+			</div>
+			<div class="row  mt-2">
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BoxNoAntenna.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BoxNoAntenna.jpg" class="img-fluid  mx-auto d-block" />
+					</a>
+					<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewOfBox.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewOfBox.jpg" class="img-fluid  mx-auto d-block" />
+					</a>
 				</div>
-				<div class="row  mt-2">
-					<div class="col-sm-12"></div>
-						<h3 class="text-uppercase text-center font-weight-bold mb-2">Building It</h3>
-					</div>
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/TransmitterAnd19.5InchAntenna.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/TransmitterAnd19.5InchAntenna.jpg" class="img-fluid  mx-auto d-block" />
+					</a>
 				</div>
-				<div class="row  mt-2">
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewPerfBoard.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewPerfBoard.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BottomPerfBoardBottomLid.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BottomPerfBoardBottomLid.jpg" class="img-fluid  mb-3 mx-auto d-block" />
-						</a>
-						<p> The more solder the better. Right? Every time I build something on my own, my appreciation
-							for the excellent technicians at my work grows.
-						</p>
-					</div>
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BotPErfBotLidWithStandoffs.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BotPErfBotLidWithStandoffs.jpg" class="img-fluid  mb-3 mx-auto d-block" />
-						</a>
-						<p>There is going to be a rev 02 version of the transmitter. I plan to add connectors to  the wires that
-							go to the SO-239 and 3.5mm antenna connectors. That will make it easier to make mods to the board.
-							Currently, the connectors hard wired to the board. I also plan on adding a broadband transformer to
-							boost the output voltage signal level.
-						</p>
-					</div>
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_SideViewLidAssmebled.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_SideViewLidAssmebled.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-					</div>
-				</div>
-
-				<div class="row  mt-2">
-					<div class="col-sm-12"></div>
-						<h3 class="text-uppercase text-center font-weight-bold mb-2">Finished Product</h3>
-					</div>
-				</div>
-				<div class="row  mt-2">
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BoxNoAntenna.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_BoxNoAntenna.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-						<a href="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewOfBox.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/1MhzXmtr_TopViewOfBox.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/TransmitterAnd19.5InchAntenna.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/TransmitterAnd19.5InchAntenna.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/TransmitterAndLoopAntenna.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/TransmitterAndLoopAntenna.jpg" class="img-fluid  mx-auto d-block" />
-						</a>
-					</div> 
-					<div class="col-sm-3">
-						<a href="/RadioActivities/OneMhzTransmitter/Images/OscilloscopePicture_NoTransformer.jpg" target="_blank">
-							<img src="/RadioActivities/OneMhzTransmitter/Images/OscilloscopePicture_NoTransformer.jpg" class="img-fluid  mb-3 mx-auto d-block" />
-						</a>
-						<h3 class="text-uppercase text-center font-weight-bold mb-2">It Works</h3>
-					</div>
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/TransmitterAndLoopAntenna.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/TransmitterAndLoopAntenna.jpg" class="img-fluid  mx-auto d-block" />
+					</a>
+				</div> 
+				<div class="col-sm-3">
+					<a href="/RadioActivities/OneMhzTransmitter/Images/OscilloscopePicture_NoTransformer.jpg" target="_blank">
+						<img src="/RadioActivities/OneMhzTransmitter/Images/OscilloscopePicture_NoTransformer.jpg" class="img-fluid  mb-3 mx-auto d-block" />
+					</a>
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">It Works</h3>
 				</div>
 			</div>
 
