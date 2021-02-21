@@ -1,6 +1,9 @@
+#!/bin/bash
+
 cd /home/crush/web_site/the_web_site/usr_lib_cgi-bin
 find . -name "*.html" -exec aspell check {} \;
 
+echo "hello"
 
 cd /home/crush/web_site/the_web_site/var_www_html
 find . -name "*.html" ! -path "*/bootstrap-4.4.1/*"  ! -path "*/css/*" -exec aspell check {} \;
