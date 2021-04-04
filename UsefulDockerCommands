@@ -1,7 +1,8 @@
  sudo docker exec -it 2ddcb127b8b440413e3b88d01352697c48d5bfa30bb06996a8c70c417f94083d bash
 
 sudo docker logs 2ddcb127b8b440413e3b88d01352697c48d5bfa30bb06996a8c70c417f94083d
-s
+
+sudo docker inspect <name>
 
 # To test treh docker image
 # *************************
@@ -52,6 +53,7 @@ docker images shows me images on my kamatera VM.
 docker ps to get container ID.
 docker stop containerID on old one
 docker run -d -p 80:80 imageID
+docker run -v /var/sftp/files:/var/www/html/remote_files:ro -d -p 80:80 imageID
 
 # Clean up, Clean up
 docker ps -a # shows all containers running and stopped.

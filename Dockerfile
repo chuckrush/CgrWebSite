@@ -24,5 +24,5 @@ EXPOSE 80
 
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
-
+RUN mkdir /var/www/html/remote_files
 
