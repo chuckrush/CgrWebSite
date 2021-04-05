@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# This script will be called periodically.
+# It's job is to check for existence of file am_530_to_1710.db
+# in directory /var/sftp/files. If the database file is found, then it will be
+# copied to the cgi directory. The copy in /var/sftp/users will be removed.
+
+# Where to find Am Station database file
+SOURCE_DIR=/var/sftp/files
+SOURCE_FILE_NAME=am_530_to_1710.db
+
+# Where to put AM Station database file
+DEST_DIR=/usr/lib/cgi-bin
+DEST_FILE_NAME=am_530_to_1710.db
+
+# If the database file is found, then copy it to cgi directory
+if [[ ! -f "$SOURCE_DIR/$SOURCE_FILE_NAME" ]]; then
+        echo $SOURCE_DIR/$SOURCE_FILE_NAME does not exist;
+	echo $(date): File $SOURCE_DIR/$SOURCE_FILE_NAME does not exist
+else
+	cp -f $SOURCE_DIR/$SOURCE_FILE_NAME $DEST_DIR/DEST_FILE_NAME
+	rm -f $SOURCE_DIR/$SOURCE_FILE_NAME
+	# Log the file copy
+	echo $(date): Copied file $SOURCE_DIR/$SOURCE_FILE_NAME $DEST_DIR/DEST_FILE_NAME >> /home/crush/file_transfer_log.txt
+fi
+
+
+
