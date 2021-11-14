@@ -1,7 +1,12 @@
 FROM ubuntu:18.04
 
+ENV TZ=America/New_York
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	apache2 \
+	certbot \
+	python3-certbot-apache \
 	sqlite3
 
 COPY docker-entrypoint.sh /usr/local/sbin/docker-entrypoint.sh

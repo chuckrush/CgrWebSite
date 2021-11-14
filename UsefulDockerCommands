@@ -24,6 +24,7 @@ docker rm <container-id>
 Steps to Build Docker Image
 ***************************
 # Does stuff in Dockerfile - Instructions to build docker image
+# Remove previous deploy image before doing build
 sudo docker build .
 #If you run out of space - sudo docker system prune
 # Output looks like this
@@ -42,7 +43,7 @@ crush@ubuntu:~/web_site/the_web_site$
 Steps to deploy
 ***************
 # Saves docker image to a file
-sudo docker image save fad318f832e2 -o docker_image_to_deploy_001
+sudo docker image save 9b300ec35f04 -o docker_image_to_deploy_001
 
 # This command copies it up to my VM on kamatera
 sudo cat docker_image_to_deploy_001 | ssh 104.238.215.67 docker image load
@@ -52,8 +53,11 @@ ssh 104.238.215.67
 docker images shows me images on my kamatera VM.
 docker ps to get container ID.
 docker stop containerID on old one
-docker run -d -p 80:80 imageID
-docker run -v /var/sftp/files:/var/www/html/remote_files:ro -d -p 80:80 imageID
+#docker run -d -p 80:80 imageID // Dave says we do not need to do this
+docker run -v /var/sftp/files:/var/www/html/remote_files:ro -d -v certs:/etc/letsencrypt -p 80:80 -p 443:443 --name website -v apache2:/etc/apache2 imageID(Big long one)
+
+
+docker exec -it ContainerId bash
 
 # Clean up, Clean up
 docker ps -a # shows all containers running and stopped.
