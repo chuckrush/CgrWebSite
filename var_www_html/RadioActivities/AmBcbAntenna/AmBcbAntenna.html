@@ -190,8 +190,8 @@
 				<div class="col-sm-3">
 					<h3 class="text-uppercase text-center font-weight-bold mb-2">Ground Plane</h3>
 					<p>
-						For the ground plane I ordered a 12X12/1/4 inch sheet of aluminum from Amazon. It cost about $34. I used a 
-						jigsaw to cut the circular hole in the plate. Chewed up a coupe of jigsaw blades doing that. Also added in
+						For the ground plane I ordered a 12X12X1/4 inch sheet of aluminum from Amazon. It cost about $34. I used a 
+						jigsaw to cut the circular hole in the plate. Chewed up a couple of jigsaw blades doing that. I also added in
 						16 bolts for the 15 foot radial wires.
 					</p>
 					<p>
@@ -239,9 +239,9 @@
 					</p>
 					<p>
 						We could not get rid of the capacitive coupling beteeen the feed point connection and the ground plain,
-						physics is physics, but we could control the positioning so te couoling is the same each time. 
+						physics is physics, but we could control the positioning so the coupling is the same each time.
 						The goal for the V2 design was a repeatable design.
-						We wanted to be able to assemble the antenna and get predicitable behavior every time we take it to
+						We wanted to be able to assemble the antenna and get predicitable behavior every time we took it to
 						a new location.
 					</p>
 				</div>
@@ -261,7 +261,7 @@
 					<h3 class="text-uppercase text-center font-weight-bold mb-2">Radiating Element</h3>
 					<p>
 						The radiating element is a a 10 foot 1/2 copper pipe. The antenna is experimental, an opportunity to learn, not a
-						permanent installation. I assemble it, run some tests, disassemble, and impove. So, I did not use any guy wires.
+						permanent installation. I assemble it, run some tests, disassemble, and improve. So, I did not use any guy wires.
 						My gut feel is you would want guy wires if you were doing a permanent installation with a 10 foot
 						copper pipe as a radiating element.
 					</p>
@@ -459,7 +459,7 @@
 						<li class="list-group-item">Record GPS position. I used an app named GPS Test on my Samsung S20</li>
 						<li class="list-group-item">Position sense antenna so signal is peaked</li>
 						<li class="list-group-item">Record signal amplitude from SDRuno display</li>
-						<li class="list-group-item">Move measurement station 250 feet further</li>
+						<li class="list-group-item">Move measurement station around 250 feet further</li>
 						<li class="list-group-item">Repeat steps 3 through 6 until signal is lost in noise.</li>
 					</ul>
 				</div>
@@ -530,17 +530,17 @@
 						<tr>
 							<td> <a href="https://www.highfrequencyelectronics.com/Feb07/HFE0207_tutorial.pdf"
 								target="_blank">https://www.highfrequencyelectronics.com/Feb07/HFE0207_tutorial.pdf</a></td>
-							<td>The most common definition is that the largest dimension of the antenna is no more than one-tenth of a wavelength.</td>
+							<td>"The most common definition is that the largest dimension of the antenna is no more than one-tenth of a wavelength."</td>
 						</tr>
 						<tr>
 							<td> <a href="https://www.antenna-theory.com/antennas/shortdipole.php"
 								target="_blank">https://www.antenna-theory.com/antennas/shortdipole.php</a></td>
-							<td>Typically, a dipole is short if its length is less than a tenth of a wavelength:</td>
+							<td>"Typically, a dipole is short if its length is less than a tenth of a wavelength."</td>
 						</tr>
 						<tr>
 							<td> <a href="http://www.arrl.org/news/tuning-electrically-short-antennas-for-field-operation-is-research-topic"
 								target="_blank">http://www.arrl.org/news/tuning-electrically-short-antennas-for-field-operation-is-research-topic</a></td>
-							<td>As the article explains, electrically short antennas — typically 0.1 λ or shorter — ...</td>
+							<td>"As the article explains, electrically short antennas — typically 0.1 λ or shorter — ..."</td>
 						</tr>
 						</tbody>
 					</table>
@@ -610,6 +610,50 @@
 					<figcaption class="blockquote-footer">
 						<a href="https://www.osha.gov/radiofrequency-and-microwave-radiation/electromagnetic-field-memo" target="_blank">from https://www.osha.gov/radiofrequency-and-microwave-radiation/electromagnetic-field-memo</a>
 					</figcaption>
+				</div>
+			</div>
+
+			<div class="row mt-4" >
+				<div class="col-sm-12">
+					<h3 class="text-uppercase font-weight-bold mb-2">Our Measurements - Did We See R-Squared?</h3>
+					<h4 class="text-uppercase font-weight-bold mb-2">Measured data</h4>
+					<p>
+						I read the signal strengths from the SDRuno spectrum display. The values are in the below table in the
+						"Measured Signal Strength column." They are also plotted in the graph below the table. The measured data
+						is the blue line with blue circles. Except for measurement 6, which I wll talk about later, the measurements
+						seem to fall on a nice curve.
+					</p>
+					<h4 class="text-uppercase font-weight-bold mb-2">Predicted data</h4>
+					<p>
+						There are four predicted data curves on the below graph. For the grey line with the triangle markers,
+						I started with the measured value at 0.24 wavelengths and predicted the subsequent R-Squared values.
+						I did the same for the other three predicted curves that start at 0.53, 0.79, and 1.04 wavelengths.
+					</p>
+					<p>
+						The predicted data curves that start at 0.24 and 0.53 wavelengths have the same general shape as the
+						measured data but have higher than expected values. However, the predicted data curves that start at 0.79
+						and 1.04 wavelengths match the measured data pretty well. According to the above definition stated above
+						for where the far field starts, I definitely was not in the far field. But, I can definitley talk
+						myself in to concluding that we saw R-Squared behavior starting around 0.79 wavelengths.
+					</p>
+					<h4 class="text-uppercase font-weight-bold mb-2">What's up with measurement position 6?</h4>
+					<p>
+						Notice how measurement 6 is above the curve.
+						When I was taking the measurements I wrote "Local altitude maxima" in my notebook. Don't read too
+						much in to that though. The measurements were taken in a corn field, it was relatively flat.
+					</p>
+					<p>
+						I plotted the signal levels with respect to altitude.  My initial reaction was "The signal is higher
+						because the sense antenna was higher at that location."
+						But if that was the case I would expect measurement 5 to be lower, measurement 7 too.
+						But, there is another but. By measurement 7 the signal was almost in the noise but
+						I could still see it. I don't think there are any conclusioms I can make about any relationship
+						between altitudes that vary by a maximum of 6 feet.
+					</p>
+					<p>
+
+					</p>
+
 				</div>
 			</div>
 
