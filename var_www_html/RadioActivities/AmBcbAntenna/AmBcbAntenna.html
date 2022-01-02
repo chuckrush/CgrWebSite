@@ -193,7 +193,7 @@
 
 			<div class="row mt-4" >
 				<div class="col-sm-3">
-					<h3 class="text-uppercase text-center font-weight-bold mb-2">Ground Plane</h3>
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">Ground Plane and Radials</h3>
 					<p>
 						For the ground plane I ordered a 12X12X1/4 inch sheet of aluminum from Amazon. It cost about $34. I used a 
 						jigsaw to cut the circular hole in the plate. Chewed up a couple of jigsaw blades doing that. I also added in
@@ -216,6 +216,29 @@
 				<div class="col-sm-3 d-flex align-items-center justify-content-center">
 					<a href="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1_Assemble_GroundPlane3.jpg" target="_blank">
 						<img src="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1_Assemble_GroundPlane3.jpg" class="img-fluid" />
+					</a>
+				</div>
+			</div>
+			<div class="row mt-4" >
+				<div class="col-sm-4">
+					<p>
+						In the sources I consulted, there seems to be general agreement
+						that you should use at least 16 radials. There also seems to be  general consensus that after 16 radials, you get
+						get less bang for your buck. So, I went with sixteen radials, each fifteen feet long.
+					</p>
+					<p>
+						Most of the sources I consulted said "Radials should be 1/4 wavelength long." At one megahertz,
+						a 1/4 wavelength is around 250 feet. That's 4000 feet of wire for 16 1/4 wavelength radials.
+					</p>
+					<p>
+						My radiating element is 10 feet long. 250 foot radials seemed excessive. I came across a source
+						that said they did experiments and found that radials around the length of the radiating element
+						performed well. So, I went with 15 foot radials.
+					</p>
+				</div>
+				<div class="col-sm-8 d-flex align-items-center justify-content-center">
+					<a href="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1_Radials.jpg" target="_blank">
+						<img src="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1_Radials.jpg" class="img-fluid" />
 					</a>
 				</div>
 			</div>
@@ -243,6 +266,22 @@
 				<div class="col-sm-3 d-flex align-items-center justify-content-center">
 					<a href="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1_V2_Assemble_RadiatingElement3.jpg" target="_blank">
 						<img src="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1_V2_Assemble_RadiatingElement3.jpg" class="img-fluid" />
+					</a>
+				</div>
+			</div>
+
+			<div class="row mt-4" >
+				<div class="col-sm-4">
+					<h3 class="text-uppercase text-center font-weight-bold mb-2">The Tuning Network</h3>
+					<p>Chapter 5 of Kyle Drake's 
+						<a href="/RadioActivities/AmBcbAntenna/Documents/lpamhandbook.pdf" target="_blank">Low Power AM Broadcasters Handbook</a>
+						was my go to resource when building this antenna. Rather than repeat the 
+						design theory and his good practical advice here, I recommend you read and heed chapter 5 - Antennas.
+					</p>
+			</div>
+				<div class="col-sm-8 d-flex align-items-center justify-content-center">
+					<a href="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1AndV2_TuningNetworkSchematic.jpg" target="_blank">
+						<img src="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1AndV2_TuningNetworkSchematic.jpg" class="img-fluid" />
 					</a>
 				</div>
 			</div>
@@ -444,7 +483,7 @@
 							design. We were concentrating so hard on getting the antenna tuned correctly, I had not given much thought
 							to how we were going to measure the range. On the morning of the test, I grabbed a TV stand my dad had
 							and got to work. I velcroed the laptop, SDRPLAY RSPPro2, and a junction block to the TV stand.
-							A dowel rod and some 2X4 scraps were used to mount a the 
+							A dowel rod and some 2X4 scraps were used to mount a  
 							Kaito AN-100 Tunable Passive AM Radio Loop Antenna
 							to the TV stand.
 						</p>
@@ -567,7 +606,7 @@
 
 			<div class="row mt-4" >
 				<div class="col-sm-12">
-					<h3 class="text-uppercase font-weight-bold mb-2">Where Doe the Far Field Start for my Antenna?</h3>
+					<h3 class="text-uppercase font-weight-bold mb-2">Where Does the Far Field Start for my Antenna?</h3>
 					<p>
 						Holy cow, what a journey! I still can't say for sure where far field starts but I suspect 
 						there are more "It depends" factors than I currently understand. There is a lot of stuff
@@ -654,7 +693,7 @@
 						because the sense antenna was higher at that location."
 						But if that was the case I would expect measurement 5 to be lower, measurement 7 too.
 						But, there is another but. By measurement 7 the signal was almost in the noise but
-						I could still see it. I don't think there are any conclusioms I can make about any relationship
+						I could still see it. I don't think there are any conclusions I can make about any relationship
 						between altitudes that vary by a maximum of 6 feet.
 					</p>
 					<p>
@@ -681,8 +720,38 @@
 
 			<div class="row   mt-4">
 					<h1 class="text-uppercase  text-center font-weight-bold mb-5">What's Next?</h1>
+					<div class="col-sm-4">
+						<h3 class="text-uppercase font-weight-bold mb-2">Better Radials - Will It Me Get More Range?</h3>
+						<p>
+							Kyle Drake, in the 
+							<a href="/RadioActivities/AmBcbAntenna/Documents/lpamhandbook.pdf" target="_blank">Low Power AM Broadcasters Handbook</a>
+							says "I have used a 5x5' chicken wire screen that was soldered together for the center of an antenna, 
+							and it improved range considerably." This leads me to believe that I may be able to get more range
+							if I improve the ground plane/radial system.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h3 class="text-uppercase font-weight-bold mb-2">Capacitive Top Hat - Will It Get Me More Range?</h3>
+						<p>
+							Kyle Drake, in the 
+							<a href="/RadioActivities/AmBcbAntenna/Documents/lpamhandbook.pdf" target="_blank">Low Power AM Broadcasters Handbook</a>
+							says "A capacitance hat is a component that helps to even the current flow
+							through an antenna. Without one, more of the signal is propagated at the bottom
+							of the vertical radiator than at the top. If more of the signal is propagating at the
+							top of the antenna, the signal does a better job of getting above trees and nearby
+							objects.." This leads me to believe that I may be able to get more range
+							if I add a top hat.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<h3 class="text-uppercase font-weight-bold mb-2">Switch Transmitter From Square Wave To Sine Wave</h3>
+						<p>
+							My dad and I strongly believe we are 100% legal with respect to power input to the antenna. However, 
+							since our signal source is a square wave, it is difficult for us to directly measure power to the antenna.
+							I plan on buidling or buying a sine wave source so we can measure power directly. 
+						</p>
+					</div>s
 				</div>
-			</div>
 
 			<!-- Footer -->
 			<footer class="page-footer font-small blue pt-4">
