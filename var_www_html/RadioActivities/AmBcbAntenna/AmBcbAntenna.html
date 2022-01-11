@@ -271,33 +271,100 @@
 				</div>
 			</div>
 
-			<div class="row  mt-2">
+			<div class="row mt-4" >
+				<div class="col-sm-12">
+					<h3 class="text-uppercase font-weight-bold mb-2">The Tuning Network</h3>
+				</div>
+			</div>
+			<div class="row mt-4" >
+				<div class="col-sm-12 d-flex align-items-center justify-content-center">
+					<a href="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1AndV2_TuningNetworkSchematic.jpg" target="_blank">
+						<img src="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1AndV2_TuningNetworkSchematic.jpg" class="img-fluid" />
+					</a>
+				</div>	
+			</div>
+			<div class="row mt-4" >
+				<div class="col-sm-4">
+					<h5 class="text-uppercase font-weight-bold mb-2">The Coil</h5>
+					<p>Chapter 5 of Kyle Drake's 
+						<a href="/RadioActivities/AmBcbAntenna/Documents/lpamhandbook.pdf" target="_blank">Low Power AM Broadcasters Handbook</a>
+						was my go to resource when building this antenna. It has good practical advice 
+						on constructing the tuning coil.
+					</p>
+					<p>
+						The table in Appendix D recommends 305uH of inductance for a 10 foot, 1/2 in radiating element at one megahartz.
+						The text after the table recommends adding more inductance than called for in the table. My coil had 144 turns 
+						on a 4.5 inch PVC pipe. Total coil length was 24 inches. The calculated value for the coil was 403uH.
+					</p>
+				</div>
+				<div class="col-sm-3">
+					<ul class="list-unstyled">
+						<li>Formula from chapter 5 of Low Power AM Broadcasters Handbook for number of turns as a function of
+							coil height and diameter</li>
+						<li>\(N=\frac{\sqrt{L (4.5 D + 10 H)}}{0.5 D}\)</li>
+					</ul>
+					<ul class="list-unstyled">
+						<li>N = Number of turns.</li>
+						<li>L = Inductance in uH</li>
+						<li>D = Diameter of Coil in inches</li>
+						<li>H = Height of coil in inches</li>
+					</ul>
+				</div>
+				<div class="col-sm-2">
+					<ul class="list-unstyled">
+						<li>Solve for L</li>
+						<li>\(L=\frac{0.5^2 N^2 4.5^2}{4.5^2 + 110 H}\)</li>
+					</ul>
+					<p>
+						<ul class="list-unstyled">
+							<li>Plug in my values</li>
+							<li>\(L=\frac{0.5^2 144^2 4.5^2}{4.5^2 + 10*24}\)</li>
+						</ul>
+					</p>
+					<p>
+						\(L = 403 uH\)
+					</p>
+				</div>
 				<div class="col-sm-3">
 					<p>
-						\(Z = 2 \pi f L\)
+						We measured the coil with my RigExpert AA-600. The measurement was around 450uH.
 					</p>
 					<p>
-						\(L=0.002 N^2 h \ln\left(\frac{r2}{r1}\right)\)
+						Because of measurement range limitations of the RigExpert AA-600 we had to do a 
+						piecewise measurement. The measurement came out to around 450uH. Pretty close for RF work!
 					</p>
+				</div>
+			</div>
+
+			<div class="row" >
+				<div class="col-sm-12">
 					<p>
-						\(N=\sqrt{\frac{L}{0.0002 h \ln{\frac{r2}{r1}}}}\)
+						It turned out I still needed more inductance for the V2 design described below. 
+						I added an extra 80uH to the coil. 
 					</p>
 				</div>
 			</div>
 
 			<div class="row mt-4" >
-				<div class="col-sm-4">
-					<h3 class="text-uppercase text-center font-weight-bold mb-2">The Tuning Network</h3>
-					<p>Chapter 5 of Kyle Drake's 
-						<a href="/RadioActivities/AmBcbAntenna/Documents/lpamhandbook.pdf" target="_blank">Low Power AM Broadcasters Handbook</a>
-						was my go to resource when building this antenna. Rather than repeat the 
-						design theory and his good practical advice here, I recommend you read and heed chapter 5 - Antennas.
+				<div class="col-sm-6">
+					<h5 class="text-uppercase font-weight-bold mb-2">The Variable Capacitors</h5>
+					<p>
+						When tuning the antenna we observed the radiated signal on a laptop running SDRUno 
+						hooked to an SDRPlay SDR. The Low Power AM Broadcaster's Handbook recommends connecting 
+						to each tap to find the one that results in the strongest signal. Then adjust the tuning
+						capacitor to peak the signal. In our V2 version we had added the extra inductance. We 
+						lucked out and we were able to peak the output with the variable capacitor when hooked 
+						to the very last tap on the coil.
 					</p>
-			</div>
-				<div class="col-sm-8 d-flex align-items-center justify-content-center">
-					<a href="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1AndV2_TuningNetworkSchematic.jpg" target="_blank">
-						<img src="/RadioActivities/AmBcbAntenna/Images/HowItGoesTogether_V1/V1AndV2_TuningNetworkSchematic.jpg" class="img-fluid" />
-					</a>
+				</div>
+				<div class="col-sm-6">
+					<p>
+						When we peaked the tuning, one capacitor was at the minimum value. I used the other one to peak the tuning.
+						I ended up not needing two variable capacitors. When building it I figured having the ability
+						to get more capacitance would adjust for any design peculiarities necessitating a larger capacitance.
+						Also, one of the capactors was 1:1 and the other was 8:1. I thought I ccould use the 8:1 for fine 
+						tuning.Turns out I did not need the 8:1 variable capacitor.
+					</p>
 				</div>
 			</div>
 
