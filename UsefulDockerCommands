@@ -1,3 +1,6 @@
+
+certbot -q renew
+
  sudo docker exec -it 2ddcb127b8b440413e3b88d01352697c48d5bfa30bb06996a8c70c417f94083d bash
 
 sudo docker logs 2ddcb127b8b440413e3b88d01352697c48d5bfa30bb06996a8c70c417f94083d
