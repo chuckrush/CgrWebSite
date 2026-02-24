@@ -30,4 +30,7 @@ EXPOSE 80
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
 RUN mkdir /var/www/html/remote_files
+RUN mkdir /var/www/html/.well-known
+RUN mkdir /var/www/html/.well-known/acme-challenge
+
 
